@@ -1,0 +1,11 @@
+{
+  "name": "sbbs-web",
+  "version": "1.0.0",
+  "author": "mike",
+  "contributors": [],
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
