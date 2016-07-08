@@ -99,6 +99,19 @@ fieldset[disabled] .btn-primary.active {
   color: #0088cc;
   background-color: white;
 }
+.btn-md {
+    color: white;
+    background-color: #0088cc;
+    border-color: #0088cc;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 16px 46px;
+    transition: all 0.2s;
+}
+
 .btn-xl {
   color: white;
   background-color: #0088cc;
@@ -111,6 +124,11 @@ fieldset[disabled] .btn-primary.active {
   padding: 20px 40px;
   transition: all 0.2s;
 }
+
+.btn-md:hover,
+.btn-md:focus,
+.btn-md:active,
+.btn-md.active,
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
@@ -748,6 +766,16 @@ ul.social-buttons li a:active {
     background-color: #005599;
     color: white;
 }
+
+/*#map-overlay {
+    background-color: rgba(0, 136, 204, 0.25);
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}*/
 
 /*::-moz-selection {
   text-shadow: none;

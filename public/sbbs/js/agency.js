@@ -39,5 +39,13 @@
 	    $(".scrollToTop").fadeOut();
 	}
     });
+    
+    //Load Google Maps
+    /*new google.maps.Map(document.getElementById("map"), {
+        center: {lat: 40.9125559, lng: -73.1162277},
+        scrollwheel: false,
+        zoom: 16
+    });*/
+    
 
 })(jQuery); // End of use strict
