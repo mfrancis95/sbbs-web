@@ -728,6 +728,27 @@ ul.social-buttons li a:active {
   opacity: 0;
   display: none;
 }
+
+.scrollToTop {
+    background-color: #0088cc;
+    bottom: 60px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    z-index: 3;
+}
+
+.scrollToTop:hover {
+    background-color: #005599;
+    color: white;
+}
+
 /*::-moz-selection {
   text-shadow: none;
   background: #0088cc;

@@ -28,6 +28,16 @@
         offset: {
             top: 100
         }
-    })
+    });
+    
+    //Fade in scrollToTop button when view is below the header
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > $("header").height()) {
+            $(".scrollToTop").fadeIn();
+	}
+        else {
+	    $(".scrollToTop").fadeOut();
+	}
+    });
 
 })(jQuery); // End of use strict
