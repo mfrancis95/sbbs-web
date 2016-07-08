@@ -240,17 +240,6 @@ header {
   color: white;
 }
 
-/*header:after {
-    box-shadow: inset 0 0 2em #666;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    content: "";
-}*/
-
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -623,6 +612,8 @@ section#contact .text-danger {
   color: #e74c3c;
 }
 footer {
+  background-color: #242424;
+  color: white;
   padding: 25px 0;
   text-align: center;
 }
@@ -736,7 +727,7 @@ ul.social-buttons li a:active {
   opacity: 0;
   display: none;
 }
-::-moz-selection {
+/*::-moz-selection {
   text-shadow: none;
   background: #0088cc;
 }
@@ -750,6 +741,6 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-/*body {
+body {
   webkit-tap-highlight-color: #0088cc;
 }*/
