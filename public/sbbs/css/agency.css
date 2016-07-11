@@ -8,7 +8,7 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-  color: #777777;
+  color: white;
 }
 .text-primary {
   color: #0088cc;
@@ -52,6 +52,11 @@ h6 {
 .bg-light-gray {
   background-color: #eeeeee;
 }
+
+.bg-mid-gray{
+    background-color: #666666;  
+}
+
 .bg-darkest-gray {
   background-color: #222222;
 }
@@ -323,7 +328,22 @@ section h3.section-subheading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+  color:white;
 }
+
+.services{
+    background: #008899;
+}
+
+.mech{
+    background: #666666;
+}
+
+.port
+{
+    background: #008899;
+}
+
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
