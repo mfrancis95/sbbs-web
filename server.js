@@ -1,14 +1,20 @@
 var express = require("express");
 var app = express();
 
+app.set("view engine", "ejs");
+
 app.use(require("compression")());
 app.use(require("morgan")("common"));
-app.use(express.static("public", {
+
+app.use("/static", express.static("public", { //Rename the folder from public to static
     //maxAge: 1209600000 Uncomment this when going live
 }));
 
-app.use(function(request, response) {
-    response.redirect("/sbbs/"); //Change this to "/" when we get rid of the templates
+//Routes
+//Add a route for each view
+
+app.get("/", function(request, response) { //Change this to be the SBBS index
+    response.render("pages/index");
 });
 
 app.listen(80, function() {
