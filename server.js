@@ -14,19 +14,27 @@ app.use("/static", express.static("static", { //Rename the folder from public to
 //Add a route for each view
 
 app.get("/", function(request, response) {
-    response.render("pages/index");
+    response.render("pages/index", {
+        title: "Stony Brook Building Science"
+    });
 });
 
 app.get("/energyModeling", function(request, response) {
-    response.render("pages/energyModeling");
+    response.render("pages/energyModeling", {
+        title: "Energy Modeling"
+    });
 });
 
 app.get("/mechSystems", function(request, response) {
-    response.render("pages/mechSystems");
+    response.render("pages/mechSystems", {
+        title: "Mechanical Systems"
+    });
 });
 
 app.get("/controls", function(request, response) {
-    response.render("pages/controls");
+    response.render("pages/controls", {
+        title: "Controls"
+    });
 });
 
 app.listen(8081, function() {
