@@ -171,6 +171,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
+  z-index: 9999;
   background-color: #222222;
   border-color: transparent;
 }
@@ -330,19 +331,6 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
   color:white;
-}
-
-.services{
-    background: #008899;
-}
-
-.mech{
-    background: #666666;
-}
-
-.port
-{
-    background: #008899;
 }
 
 #portfolio .portfolio-item {
@@ -780,12 +768,31 @@ ul.social-buttons li a:active {
     text-align: center;
     text-decoration: none;
     width: 50px;
-    z-index: 3;
+    z-index: 9998;
 }
 
 .scrollToTop:hover {
     background-color: #005599;
     color: white;
+}
+
+.services{
+    background: #008899;
+}
+
+.mech{
+    background: #666666;
+}
+
+.port
+{
+    background: #008899;
+}
+
+.pageName{
+    color:#0088CC;
+    font-size: 30px;
+    width: 300px;
 }
 
 /*#map-overlay {
