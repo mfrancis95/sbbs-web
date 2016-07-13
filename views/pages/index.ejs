@@ -1,12 +1,212 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>EJS test</title>
-    </head>
-    <body>
-        <% include ../partials/header %>
-        <p>The header should be included.</p>
+    <% include ../partials/topCSS %>
+
+    <body id="page-top" class="index">
+
+        <!-- Navigation -->
+        <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#page-top">SBBS</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">About Us</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#services">Services</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#energy">Energy Modeling</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#mech">Mechanical Systems</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#auto">Automation & Controls</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-heading">Stony Brook Building Science</div>
+                    <div class="intro-lead-in">Modeling buildings for a more sustainable future. </div>
+                    <a class="btn btn-xl smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#about">Tell Me More!</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" style="background:white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">About</h2>
+                        <h3 class="section-subheading text-muted"></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <p style="line-height: 2.5;">Stony Brook Building Science, LLC. is headquartered 
+                            in the LI High Technology Incubator and specializes in advanced energy
+                            modeling and the development of solutions that optimize the energy efficiency of 
+                            commercial and residential buildings. SBBS uniquely combines the disciplines of 
+                            Energy Modeling, Mechanical Systems design and Building Automation. Efficiency measures
+                            are modeled, designed, and optimally controlled.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <!-- Services Section -->
+        <section id="services" class = "bg-mid-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading" style = "color:white">Services</h2>
+                        <h3 class="section-subheading text-muted">Some of the main focus points.</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a href="/energyModeling">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-plug fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <h4 class="service-heading">Energy Modeling</h4>
+                        <p style="height:96px" class="text-muted">Stony Brook Building Science works on building 3D Models.</p>
+                        <a class="btn btn-md" href="/energyModeling">Learn More</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href ="/mechSystems">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <h4 class="service-heading">Mechanical Systems</h4>
+                        <p style="height:96px" class="text-muted">Stony Brook Building Science works on planning out mechanical systems.</p>
+                        <a class="btn btn-md" href="/mechSystems">Learn More</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/controls">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <h4 class="service-heading">Automation & Controls</h4>
+                        <p class="text-muted">SBBS specializes in Controls Design, Integration and Programming. We provide controls documentation for each project in integration of all the controls and deliverables.</p>
+                        <a class="btn btn-md" href="/controls">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Energy Modeling -->
+        <div id = "energy" class="container ptb">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 style="font-size:40px">Energy Modeling at SBBS</h2>
+                    <p class="mt">Lorem Ipsum is simply dummy text of the printing and typesetting 
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                        the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/static/img/cogs.jpg" class="img-responsive mt" alt="">
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+
+        <!-- Mechanical Systems -->
+        <div id = "mech" class="mech">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/static/img/cogs.jpg" class="img-responsive mt" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h2 style = "color:white;font-size:40px">Mechanical Systems</h2>
+                    <p class="mt" style = "color:white">Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took 
+                        a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+
+        <!-- Automation & Controls -->
+        <div id = "auto" class="container ptb">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 style="font-size:40px">Automation & Controls</h2>
+                    <p class="mt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                        unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/static/img/cogs.jpg" class="img-responsive mt" alt="">
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+
+        <aside class="clients bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href ="http://www.e2sys.com" target = "_blank">
+                            <img class="img-centered img-responsive" src="/static/img/logos/easternenergy.jpg" alt ="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href ="http://www.mwgroup.net/" target ="_blank">
+                            <img class="img-centered img-responsive" src="/static/img/logos/mwgroup.jpg" alt = "">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!--Google Maps section with overlay-->
+        <!--<div style="height: 500px; position: relative;">
+            <div id="map" style="height: 500px;">
+            </div>
+            <div id="map-overlay"></div>
+            <div class="row" style="position: absolute;">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+        </div>-->
+
+        <a class="scrollToTop smooth-scroll" data-ease="easeInQuad" data-history="true" href="#page-top" style="display: none;">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+        <% include ../partials/footer %>
+        <% include ../partials/bottomScripts %>
     </body>
+
 </html>
-<!--This is just an example.
-Delete this when everything's moved over-->
