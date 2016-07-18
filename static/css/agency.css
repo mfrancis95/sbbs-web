@@ -223,9 +223,11 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #0088CC;
 }
+
+
 @media (min-width: 768px) {
+    
   .navbar-custom {
-    background-color: transparent;
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -233,7 +235,7 @@ fieldset[disabled] .btn-xl.active {
     border: none;
   }
   .navbar-custom .navbar-brand {
-    font-size: 3em;
+    font-size: 2.5em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -784,6 +786,10 @@ ul.social-buttons li a:active {
     background: #666666;
 }
 
+.power{
+    background: #666666;
+}
+
 .port
 {
     background: #008899;
@@ -792,14 +798,18 @@ ul.social-buttons li a:active {
 .pageName{
     color:#0088CC;
     font-size: 30px;
+    margin-right: 30px;
 }
 
 @media only screen and (min-width: 961px){
 .social-sidebar{
+    text-align:center;
     display: block;
+    height: 240px;
+    width: 60px;
     position: fixed;
     right: 0;
-    top: 220px;
+    top: 110px;
     z-index: 100001;
     padding: 15px 14px 4px 16px;
     background: #000;
@@ -823,6 +833,9 @@ ul.social-buttons li a:active {
     margin: 0 5%;
 }
 
+#toolClick{
+    font-size: 40px;
+}
 /*#map-overlay {
     background-color: rgba(0, 136, 204, 0.25);
     height: 100%;

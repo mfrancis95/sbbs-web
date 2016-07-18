@@ -33,7 +33,13 @@ app.get("/mechSystems", function(request, response) {
 
 app.get("/controls", function(request, response) {
     response.render("pages/controls", {
-        title: "Controls"
+        title: "Controls & Automation"
+    });
+});
+
+app.get("/renewablePower", function(request, response) {
+    response.render("pages/renewablePower", {
+        title: "Renewable Power Generation"
     });
 });
 
