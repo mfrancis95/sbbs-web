@@ -91,14 +91,14 @@
         <section id="slideshow">
             <div class="container">
                 <div class="row">
-                    <ul class="bxslider" style="text-align:center">
-                        <li><img style="text-align:center" src="/static/img/energy/Picture1.jpg" alt=""></li>
-                        <li><img style="text-align:center" src="/static/img/energy/Picture2.jpg" alt=""></li>
-                    </ul>
+                    <div class="bxslider" style="align-content: center">
+                        <div><img src="/static/img/energy/Picture1.jpg" alt=""></div>
+                        <div><img src="/static/img/energy/Picture2.jpg" alt=""></div>
+                    </div>
                 </div>
             </div>
         </section>
-
+      
         <!-- Geothermal Section -->
         <section id="geothermal">
             <div class="container">
@@ -205,13 +205,19 @@
         <% include ../partials/footer %>
         <% include ../partials/bottomScripts %>
 
+    
+    </script>
+        
         <script>
             $(document).ready(function () {
                 $('.bxslider').bxSlider();
-                /**var iElem = $("<i>");
-                 iElem.addClass("fa fa-facebook");
-                 $(".bx-prev").append(iElem);
-                 $(".bx-next").append(iElem);**/
+                    var prevElem = $("<i>");
+                    prevElem.addClass("fa fa-arrow-left");
+                    $(".bx-prev").append(prevElem);
+                 
+                    var nextElem = $("<i>");
+                    nextElem.addClass("fa fa-arrow-right");
+                    $(".bx-next").append(nextElem);
             });
         </script>
     </body>
