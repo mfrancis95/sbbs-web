@@ -155,7 +155,7 @@ Element.prototype.smoothScrollify = function() {
         if (dataset.history) {
             history.pushState(null, null, href);
         }
-        var position = document.getElementById(href.slice(1)).offsetTop - document.getElementById("mainNav").offsetHeight;
+        var position = document.getElementById(href.slice(1)).offsetTop - document.getElementById("mainNav").offsetHeight+1;
         smoothScroll(position, dataset.duration, dataset.ease, dataset.interruptible);
     });
 };

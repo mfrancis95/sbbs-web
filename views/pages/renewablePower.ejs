@@ -44,7 +44,7 @@
         </nav>
 
         <!-- Header -->
-        <header style="background-image: url(/static/img/power.jpg)">
+        <header style="background-image: url(/static/img/headerImages/power.jpg)">
             <div class="container">
                 <div class="intro-text">
                     <div class="intro-heading">Renewable Power Generation</div>
@@ -138,33 +138,57 @@
             </div>
         </section>
         
-        <section id="slideshow">
-            <div class="container">
-                <div class="row">
-                    <ul class="bxslider" style="text-align:center">
-                        <li><img style="text-align:center" src="/static/img/energy/Picture1.jpg" alt=""></li>
-                        <li><img style="text-align:center" src="/static/img/energy/Picture2.jpg" alt=""></li>
-                    </ul>
-                </div>
-            </div>
+        <section id="slideshow" class="bg-light-gray">
+            <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+                        <!-- Loading Screen -->
+                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                            <div style="position:absolute;display:block;background:url('/static/img/slideshow/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                        </div>
+                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
+                            <div data-p="144.50" style="display: none;">
+                                <img data-u="image" src="/static/img/power/01crop.png" />
+                                <img data-u="thumb" src="/static/img/power/01-thumb.png" />
+                            </div>
+                            <div data-p="144.50" style="display: none;">
+                                <img data-u="image" src="/static/img/power/02crop.png" />
+                                <img data-u="thumb" src="/static/img/power/02-thumb.png" />
+                            </div>
+                            <div data-p="144.50" style="display: none;">
+                                <img data-u="image" src="/static/img/power/03.png" />
+                                <img data-u="thumb" src="/static/img/power/03-thumb.png" />
+                            </div>
+                            <div data-p="144.50" style="display: none;">
+                                <img data-u="image" src="/static/img/power/04crop.png" />
+                                <img data-u="thumb" src="/static/img/power/04-thumb.png" />
+                            </div>
+                            <div data-p="144.50" style="display: none;">
+                                <img data-u="image" src="/static/img/power/05crop.png" />
+                                <img data-u="thumb" src="/static/img/power/05-thumb.png" />
+                            </div>
+                            <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+
+                        </div>
+                        <!-- Thumbnail Navigator -->
+                        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+                            <!-- Thumbnail Item Skin Begin -->
+                            <div data-u="slides" style="cursor: default;">
+                                <div data-u="prototype" class="p">
+                                    <div class="w">
+                                        <div data-u="thumbnailtemplate" class="t"></div>
+                                    </div>
+                                    <div class="c"></div>
+                                </div>
+                            </div>
+                            <!-- Thumbnail Item Skin End -->
+                        </div>
+                        <!-- Arrow Navigator -->
+                        <span data-u="arrowleft" class="jssora05l" style="background-color: gray; top:158px;left:8px;width:40px;height:40px;"></span>
+                        <span data-u="arrowright" class="jssora05r" style="background-color: gray; top:158px;right:8px;width:40px;height:40px;"></span>
+                    </div>
         </section>
 
-        <aside class="clients">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <a href ="http://www.e2sys.com" target = "_blank">
-                            <img class="img-centered img-responsive" src="/static/img/logos/easternenergy.jpg" alt ="">
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href ="http://www.mwgroup.net/" target ="_blank">
-                            <img class="img-centered img-responsive" src="/static/img/logos/mwgroup.jpg" alt = "">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </aside>
+        <% include ../partials/clients %>
 
         <a class="scrollToTop smooth-scroll" data-ease="easeInQuad" data-history="true" href="#page-top" style="display: none;">
             <i class="fa fa-angle-up"></i>
@@ -172,16 +196,8 @@
 
         <% include ../partials/footer %>
         <% include ../partials/bottomScripts %>
-
-        <script>
-            $(document).ready(function () {
-                $('.bxslider').bxSlider();
-                var iElem = $("<i>");
-                 iElem.addClass("fa fa-facebook");
-                 $(".bx-prev").append(iElem);
-                 $(".bx-next").append(iElem);
-            });
-        </script>
+        <% include ../partials/readySlideshow %>
+        
     </body>
 
 </html>

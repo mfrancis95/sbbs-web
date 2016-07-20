@@ -28,6 +28,9 @@
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">About</a>
                         </li>
                         <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#slideshow">Models</a>
+                        </li>
+                        <li>
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#geothermal">Geothermal</a>
                         </li>
                         <li>
@@ -47,7 +50,7 @@
         </nav>
 
         <!-- Header -->
-        <header style="background-image: url(/static/img/lightBulbs.jpg)">
+        <header style="background-image: url(/static/img/headerImages/lightBulbs.jpg)">
             <div class="container">
                 <div class="intro-text">
                     <div class="intro-heading">Energy Modeling Systems</div>
@@ -65,7 +68,7 @@
         </aside>
         
         <!-- About -->
-        <section id="about" class="bg-light-gray">
+        <section id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -88,15 +91,54 @@
             </div>
         </section>
 
-        <section id="slideshow">
-            <div class="container">
-                <div class="row">
-                    <div class="bxslider" style="align-content: center">
-                        <div><img src="/static/img/energy/Picture1.jpg" alt=""></div>
-                        <div><img src="/static/img/energy/Picture2.jpg" alt=""></div>
+        <section id="slideshow" class="bg-light-gray">
+            <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+                        <!-- Loading Screen -->
+                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                            <div style="position:absolute;display:block;background:url('/static/img/slideshow/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                        </div>
+                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
+                            <div data-p="144.50" style="display: none;">
+                                <img data-u="image" src="/static/img/energy/02.jpg" />
+                                <img data-u="thumb" src="/static/img/energy/thumb-02.jpg" />
+                            </div>
+                            <div data-p="144.50" style="display: none;">
+                                <img data-u="image" src="/static/img/energy/03.jpg" />
+                                <img data-u="thumb" src="/static/img/energy/thumb-03.jpg" />
+                            </div>
+                            <div data-p="144.50" style="display: none;">
+                                <img data-u="image" src="/static/img/energy/04.jpg" />
+                                <img data-u="thumb" src="/static/img/energy/thumb-04.jpg" />
+                            </div>
+                            <div data-p="144.50" style="display: none;">
+                                <img data-u="image" src="/static/img/energy/05.jpg" />
+                                <img data-u="thumb" src="/static/img/energy/thumb-05.jpg" />
+                            </div>
+                            <div data-p="144.50" style="display: none;">
+                                <img data-u="image" src="/static/img/energy/06.jpg" />
+                                <img data-u="thumb" src="/static/img/energy/thumb-06.jpg" />
+                            </div>
+                            <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+
+                        </div>
+                        <!-- Thumbnail Navigator -->
+                        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+                            <!-- Thumbnail Item Skin Begin -->
+                            <div data-u="slides" style="cursor: default;">
+                                <div data-u="prototype" class="p">
+                                    <div class="w">
+                                        <div data-u="thumbnailtemplate" class="t"></div>
+                                    </div>
+                                    <div class="c"></div>
+                                </div>
+                            </div>
+                            <!-- Thumbnail Item Skin End -->
+                        </div>
+                        <!-- Arrow Navigator -->
+                        <span data-u="arrowleft" class="jssora05l" style="background-color: gray; top:158px;left:8px;width:40px;height:40px;"></span>
+                        <span data-u="arrowright" class="jssora05r" style="background-color: gray; top:158px;right:8px;width:40px;height:40px;"></span>
                     </div>
-                </div>
-            </div>
         </section>
       
         <!-- Geothermal Section -->
@@ -141,7 +183,7 @@
         </section>
 
         <!-- Net Zero -->
-        <section id="netZero">
+        <div id="netZero">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -152,11 +194,11 @@
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <img src="/static/img/cogs.jpg" class="img-responsive" alt="">
+                        <img src="/static/img/netZero.jpg" class="img-responsive" alt="">
                     </div>
                 </div><!--/row-->
             </div><!--/container-->
-        </section>
+        </div>
 
         <!-- Tools -->
         <section id="tools" class="bg-light-gray">
@@ -181,22 +223,7 @@
             </div>
         </section>
 
-        <aside class="clients">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <a href ="http://www.e2sys.com" target = "_blank">
-                            <img class="img-centered img-responsive" src="/static/img/logos/easternenergy.jpg" alt ="">
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href ="http://www.mwgroup.net/" target ="_blank">
-                            <img class="img-centered img-responsive" src="/static/img/logos/mwgroup.jpg" alt = "">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </aside>
+        <% include ../partials/clients %>
 
         <a class="scrollToTop smooth-scroll" data-ease="easeInQuad" data-history="true" href="#page-top" style="display: none;">
             <i class="fa fa-angle-up"></i>
@@ -204,22 +231,8 @@
 
         <% include ../partials/footer %>
         <% include ../partials/bottomScripts %>
-
-    
-    </script>
+        <% include ../partials/readySlideshow %>
         
-        <script>
-            $(document).ready(function () {
-                $('.bxslider').bxSlider();
-                    var prevElem = $("<i>");
-                    prevElem.addClass("fa fa-arrow-left");
-                    $(".bx-prev").append(prevElem);
-                 
-                    var nextElem = $("<i>");
-                    nextElem.addClass("fa fa-arrow-right");
-                    $(".bx-next").append(nextElem);
-            });
-        </script>
     </body>
 
 </html>
