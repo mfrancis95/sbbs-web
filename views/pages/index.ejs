@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <% include ../partials/topCSS %>
-
+    
     <body id="page-top" class="index">
 
         <!-- Navigation -->
@@ -22,22 +22,22 @@
                             <a href="#page-top"></a>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">About Us</a>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#main-slider">Energy Modeling</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#main-slider">Mech. Systems</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#main-slider">Automation & Controls</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#main-slider">Renewable Power</a>
                         </li>
                         <li>
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#services">Services</a>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#energy">Energy Modeling</a>
-                        </li>
-                        <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#mech">Mech. Systems</a>
-                        </li>
-                        <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#auto">Automation & Controls</a>
-                        </li>
-                        <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#power">Renewable Power</a>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -56,123 +56,177 @@
                 </div>
             </div>
         </header>
-        
+
         <% include ../partials/sideToolbar %>
 
-        <section id="slideshow" class="bg-light-gray">
-            <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
-                <!-- Loading Screen -->
-                <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                    <div style="position:absolute;display:block;background:url('/static/img/slideshow/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-                </div>
-                <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
-
-                    <div data-p="144.50" style="display: none;">
-                        <!-- Energy Modeling -->
-                        <div id="energy" class="container ptb" style="width:100%">
-                            <div class="row">
-                                <div class="col-md-6" style="padding-right:30px">
-                                    <h2 style="font-size:40px; color:white;">Energy Modeling at SBBS</h2>
+        <section id="main-slider" class="bg-light-gray" style="padding-top:0; padding-bottom:0;">
+            <div class="container" style="width:100%"> <!--Container-->
+                <div class="row">  <!--Row-->
+        <div class="owl-carousel">
+            <div class="item" style="background-color: #666666;"><!-- Energy Modeling -->
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6" style="vertical-align:middle;">
+                                <div class="carousel-content">
+                                     <h2 style="font-size:40px; color:white;">Energy Modeling at SBBS</h2>
                                     <p style ="color:white;" class="mt">Lorem Ipsum is simply dummy text of the printing and typesetting 
                                         industry. Lorem Ipsum has been the industry's standard dummy text ever since
                                         the 1500s, when an unknown printer took a galley of type and scrambled it to 
                                         make a type specimen book.</p><br>
                                     <a class="btn btn-md" href="/energyModeling">Learn More</a>
                                 </div>
-                                <div class="col-md-6" style="text-align:center;">
-                                    <img data-u="image" style="margin:auto; width:100%;" src="/static/img/energy/03.jpg" class="img-responsive mt" style="margin: auto;" alt="">
-
+                            </div>
+                            <div class="col-md-6" style="margin:auto;">
+                                <div class="carousel-content">
+                                    <img class="ssimg" data-u="image" src="/static/img/energy/03.jpg" class="img-responsive mt" alt="">
                                 </div>
-                            </div><!--/row-->
-                        </div><!--/container-->
-                        <img data-u="thumb" src='/static/img/energy/thumb-03.jpg'/>
+                            </div>
+                        </div>
                     </div>
-
-                    <div data-p='144.50' style='display:none;'>
-                        <!-- Mechanical Systems -->
-                        <div id = "mech">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h2 style = "color:white;font-size:40px">Mechanical Systems</h2>
+                </div>
+            </div><!-- Energy Modeling -->
+            
+            <div class="item" style="background-color: #666666;"> <!-- Mechanical Systems -->
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                     <h2 style = "color:white;font-size:40px">Mechanical Systems</h2>
                                     <p class="mt" style = "color:white">Lorem Ipsum is simply dummy text of the 
                                         printing and typesetting industry. Lorem Ipsum has been the industry's
                                         standard dummy text ever since the 1500s, when an unknown printer took 
                                         a galley of type and scrambled it to make a type specimen book.</p><br>
                                     <a class="btn btn-md" style="text-align:center;" href="/mechSystems">Learn More</a>
                                 </div>
-                                <div class="col-md-6" style="text-align:center">
-                                    <img data-u="image" src="/static/img/mechSystems/01.jpg" class="img-responsive mt" style="margin:auto;" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                     <img class="ssimg" data-u="image" src="/static/img/mechSystems/01.jpg" class="img-responsive mt" alt="">
                                 </div>
-                            </div><!--/row-->
-                        </div><!--/container-->
-                        <img data-u="thumb" src="/static/img/mechSystems/thumb-01.jpg"/>
+                            </div>
+                        </div>
                     </div>
-
-                    <div data-p="144.50" style='display:none;'>
-                        <!-- Automation & Controls -->
-                        <div id = "auto" class="container ptb">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h2 style="color:white; font-size:40px">Automation & Controls</h2>
+                </div>
+            </div><!-- Mechanical Systems -->
+            
+            <div class="item" style="background-color: #666666;"> <!-- Controls -->
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                     <h2 style="color:white; font-size:40px">Automation & Controls</h2>
                                     <p class="mt" style='color:white;'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
                                         unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br>
                                     <a class="btn btn-md" style="text-align:center;" href="/controls">Learn More</a>
                                 </div>
-                                <div class="col-md-6 bg-light-gray">
-                                    <img data-u='image' src="/static/img/cpu.jpg" class="img-responsive mt" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                    <img class="ssimg" data-u='image' src="/static/img/cpu.jpg" class="img-responsive mt" alt="">
                                 </div>
-                            </div><!--/row-->
-                        </div><!--/container-->
-                        <img data-u="thumb" src="/static/img/controls/icon.jpg"/>
+                            </div>
+                        </div>
                     </div>
-
-                    <div data-p='144.50' style='display:none;'>
-                        <!-- Renewable Power Generation -->
-                        <div id = "power">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h2 style = "color:white;font-size:40px">Renewable Power Generation</h2>
+                </div>
+            </div><!-- Controls -->
+            
+            <div class="item" style="background-color: #666666;"> <!-- Power -->
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                     <h2 style = "color:white;font-size:40px">Renewable Power Generation</h2>
                                     <p class="mt" style = "color:white">Lorem Ipsum is simply dummy text of the 
                                         printing and typesetting industry. Lorem Ipsum has been the industry's
                                         standard dummy text ever since the 1500s, when an unknown printer took 
                                         a galley of type and scrambled it to make a type specimen book.</p><br>
                                     <a class="btn btn-md" style="text-align:center;" href="/renewablePower">Learn More</a>
                                 </div>
-                                <div class="col-md-6">
-                                    <img data-u='image' src="/static/img/solar.png" style="margin:auto" class="img-responsive mt" alt="">
-                                </div>
-                            </div><!--/row-->
-                        </div><!--/container-->
-                        <img data-u="thumb" src="/static/img/power/icon.png"/>
-                    </div>
-                    
-
-                    <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
-
-                </div>
-                <!-- Thumbnail Navigator -->
-                <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
-                    <!-- Thumbnail Item Skin Begin -->
-                    <div data-u="slides" style="cursor: default;">
-                        <div data-u="prototype" class="p">
-                            <div class="w">
-                                <div data-u="thumbnailtemplate" class="t"></div>
                             </div>
-                            <div class="c"></div>
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                    <img class="ssimg" data-u='image' src="/static/img/solar.png" class="img-responsive mt" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Thumbnail Item Skin End -->
                 </div>
-                <!-- Arrow Navigator -->
-                <span data-u="arrowleft" class="jssora05l" style="background-color: gray; top:158px;left:8px;width:40px;height:40px;"></span>
-                <span data-u="arrowright" class="jssora05r" style="background-color: gray; top:158px;right:8px;width:40px;height:40px;"></span>
+            </div><!--/.item-->
+        </div><!--/.owl-carousel-->
+                </div> <!--Row-->
+            </div> <!-- Container -->
+    </section><!--/#main-slider-->     
+
+        <!-- Services Section -->
+        <section id="services" class="text-center">
+            <div class="container" style="text-align:center;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Services</h2>
+                        <h3 class="section-subheading text-muted"></h3>
+                    </div>
+                </div>
+                <div class="row text-center serviceRow">
+                    <a href="/energyModeling">
+                        <div class="col-md-3 serviceColumn leftServiceColumn">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-plug fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Energy Modeling</h4>
+                            <p style="height:96px" class="text-muted">Stony Brook Building Science works on building 3D Models.</p>
+                        </div>
+                    </a>
+
+                    <a href ="/mechSystems">
+                        <div class="col-md-3 serviceColumn borderColumn">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
+                            </span>
+
+                            <h4 class="service-heading">Mechanical Systems</h4>
+                            <p style="height:96px" class="text-muted">Stony Brook Building Science works on planning out mechanical systems.</p>
+                        </div>
+                    </a>
+
+                    <a href="/controls">
+                        <div class="col-md-3 serviceColumn borderColumn">
+
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Automation & Controls</h4>
+                            <p class="text-muted">SBBS specializes in Controls Design, Integration and Programming. 
+                                We provide controls documentation for each project in integration of all the controls 
+                                and deliverables.</p>
+                        </div>
+                    </a>
+
+                    <a href="/renewablePower">
+                        <div class="col-md-3 serviceColumn borderColumn rightServiceColumn">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-recycle fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Renewable Power Generation</h4>
+                            <p class="text-muted">SBBS is working on developing tools that will be able to re-use
+                                power in an efficient and eco-friendly manner.</p>
+                        </div>
+                    </a>
+
+                </div>
             </div>
         </section>
-
+        
         <!-- About Section -->
-        <section id="about" style="background:white">
+        <section id="about" class="bg-light-gray">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -192,64 +246,7 @@
                     </div>
                 </div>
             </div>
-        </section>        
-
-        <!-- Services Section -->
-        <section id="services" class = "bg-mid-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading" style = "color:white">Services</h2>
-                        <h3 class="section-subheading text-muted">Some of the main focus points.</h3>
-                    </div>
-                </div>
-                <div class="row text-center" style='width:1200px'>
-                    <div class="col-md-3 serviceColumn">
-                        <a href="/energyModeling">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-plug fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                        <h4 class="service-heading">Energy Modeling</h4>
-                        <p style="height:96px" class="text-muted">Stony Brook Building Science works on building 3D Models.</p>
-                    </div>
-                    <div class="col-md-3 serviceColumn borderColumn">
-                        <a href ="/mechSystems">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                        <h4 class="service-heading">Mechanical Systems</h4>
-                        <p style="height:96px" class="text-muted">Stony Brook Building Science works on planning out mechanical systems.</p>
-                    </div>
-                    <div class="col-md-3 serviceColumn borderColumn">
-                        <a href="/controls">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                        <h4 class="service-heading">Automation & Controls</h4>
-                        <p class="text-muted">SBBS specializes in Controls Design, Integration and Programming. 
-                            We provide controls documentation for each project in integration of all the controls 
-                            and deliverables.</p>
-                    </div>
-                    <div class="col-md-3 serviceColumn borderColumn">
-                        <a href="/renewablePower">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-recycle fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                        <h4 class="service-heading">Renewable Power Generation</h4>
-                        <p class="text-muted">SBBS is working on developing tools that will be able to re-use
-                            power in an efficient and eco-friendly manner.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section>  
 
         <% include ../partials/clients %>
 
@@ -272,7 +269,96 @@
 
         <% include ../partials/footer %>
         <% include ../partials/bottomScripts %>
-        <% include ../partials/readySlideshow %>
+        
+        <script>
+	$(document).ready(function() {
+            
+		var time = 7; // time in seconds
+
+	 	var $progressBar,
+	      $bar, 
+	      $elem, 
+	      isPause, 
+	      tick,
+	      percentTime;
+	 
+	    //Init the carousel
+	    $("#main-slider").find('.owl-carousel').owlCarousel({
+	      slideSpeed : 500,
+	      paginationSpeed : 500,
+	      singleItem : true,
+	      navigation : true,
+			navigationText: [
+			"<i class='fa fa-angle-left'></i>",
+			"<i class='fa fa-angle-right'></i>"
+			],
+	      afterInit : progressBar,
+	      afterMove : moved,
+	      startDragging : pauseOnDragging,
+	      //autoHeight : true,
+	      transitionStyle : "fadeUp"
+	    });
+	 
+	    //Init progressBar where elem is $("#owl-demo")
+	    function progressBar(elem){
+	      $elem = elem;
+	      //build progress bar elements
+	      buildProgressBar();
+	      //start counting
+	      start();
+	    }
+	 
+	    //create div#progressBar and div#bar then append to $(".owl-carousel")
+	    function buildProgressBar(){
+	      $progressBar = $("<div>",{
+	        id:"progressBar"
+	      });
+	      $bar = $("<div>",{
+	        id:"bar"
+	      });
+	      $progressBar.append($bar).appendTo($elem);
+	    }
+	 
+	    function start() {
+	      //reset timer
+	      percentTime = 0;
+	      isPause = true;
+	      //run interval every 0.01 second
+	      tick = setInterval(interval, 10);
+	    };
+	 
+	    function interval() {
+	      if(isPause === false){
+	        percentTime += 1 / time;
+	        $bar.css({
+	           width: percentTime+"%"
+	         });
+	        //if percentTime is equal or greater than 100
+	        if(percentTime >= 100){
+	          //slide to next item 
+	          $elem.trigger('owl.next')
+	        }
+	      }
+	    }
+	 
+	    //pause while dragging 
+	    function pauseOnDragging(){
+	      isPause = true;
+	    }
+	 
+	    //moved callback
+	    function moved(){
+	      //clear interval
+	      clearTimeout(tick);
+	      //start again
+	      start();
+	    }
+	});
+        </script>
+        
+        <!--<% include ../partials/readySlideshow %>-->
+        
+        
     </body>
 
 </html>

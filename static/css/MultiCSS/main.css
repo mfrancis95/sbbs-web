@@ -12,13 +12,15 @@ Author URL: http://shapebootstrap.net
   overflow: hidden;
 }
 #main-slider .item {
-  height: 558px;
+  height: 500px;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
 #main-slider .slider-inner {
   position: absolute;
+  padding-left:100px;
+  padding-right:100px;
   top: 0;
   left: 0;
   width: 100%;
@@ -26,12 +28,19 @@ Author URL: http://shapebootstrap.net
   color: #fff;
 }
 #main-slider .slider-inner h2 {
-  margin-top: 180px;
+  margin-top: 30px;
   font-size: 36px;
   line-height: 1;
   text-transform: uppercase;
   color: #fff;
 }
+
+.ssimg{
+    margin:auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 #main-slider .slider-inner h2 > span {
   color: #45aed6;
 }
@@ -60,6 +69,7 @@ Author URL: http://shapebootstrap.net
 #main-slider .owl-next:hover {
   background-color: #45aed6;
 }
+/**
 #main-slider .owl-prev {
   left: -35px;
   text-indent: 14px;
@@ -67,7 +77,7 @@ Author URL: http://shapebootstrap.net
 #main-slider .owl-next {
   right: -35px;
   text-indent: -14px;
-}
+}**/
 #bar {
   width: 0%;
   max-width: 100%;

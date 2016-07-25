@@ -326,7 +326,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 }
 .service-heading {
@@ -636,19 +636,64 @@ ul.social-buttons li a:active {
 }
 
 .serviceColumn{
+    background-color: #444;
     padding-top:5px;
-    width: 24%;
+    width: 25%;
+    transition:background-color .4s;
     height: 405px;
 }
 
+.leftServiceColumn{
+    border-color: rgba(255,255,255,.5);
+    border-width: 0 0 0 0;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+.rightServiceColumn{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+}
+
+.serviceColumn:hover{
+    background-color: #0088cc;
+}
+
 .borderColumn{
-    border-color:white;
-    border-width: 0 0 0 3px;
+    border-color:rgba(255,255,255,.5);
+    border-width: 0 0 0 1px;
     border-style:solid;
 }
 
 .active-icon{
     color: #878a85;
+}
+
+.owl-prev{
+    position:relative;
+    left: 2em;
+}
+
+.owl-next{
+    position:relative;
+    right:2em;
+}
+
+.slider-inner{
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+/**
+.slider-inner{
+  position:relative;
+  top: 50%;
+  transform: translateY(15%);
+}**/
+
+.vertical-align{
+    display:flex;
+    align-items:center;
 }
 
 @media only screen and (min-width: 961px){

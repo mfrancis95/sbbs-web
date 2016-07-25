@@ -4,7 +4,7 @@ var app = express();
 app.set("view engine", "ejs");
 
 app.use(require("compression")());
-app.use(require("express-minify")());
+//app.use(require("express-minify")());
 app.use(require("morgan")("common"));
 
 app.use("/static", express.static("static", { //Rename the folder from public to static
