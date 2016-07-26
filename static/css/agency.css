@@ -113,7 +113,7 @@ fieldset[disabled] .btn-primary.active {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    border-radius: 3px;
+    border-radius: 10px;
     font-size: 14px;
     padding: 16px 46px;
     transition: all 0.2s;
@@ -251,9 +251,6 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222222;
     padding: 10px 0;
   }
-  .navbar-custom.affix .navbar-brand {
-    font-size: 2.5em;
-  }
 }
 header {
   background-image: url('../img/headerImages/sierra332cropped.png');
@@ -279,6 +276,7 @@ header .intro-text .intro-lead-in {
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
+  text-shadow: 2px 2px 0 #444;
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -287,7 +285,7 @@ header .intro-text .intro-heading {
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
-  text-shadow: 2px 2px 0 #444;
+  text-shadow: 6px -4px 0 #444;
 }
 @media (min-width: 768px) {
   header .intro-text {
@@ -674,12 +672,12 @@ ul.social-buttons li a:active {
 }
 
 .active-icon{
-    color: #878a85;
+    color: white;
 }
 
 .owl-prev{
     position:relative;
-    left: 2em;
+    left: 1em;
 }
 
 .owl-next{
@@ -692,17 +690,33 @@ ul.social-buttons li a:active {
     padding-bottom:80px;
 }
 
+.headerDownArrow{
+    transform: scale(12,6);
+    color: rgba(255,255,255,.6);
+}
+
+.headerDownArrow:hover{
+    color: white;
+}
+
+@media (min-width:768px){
+    .navbar-right{
+        margin-right:-35px;
+    }
+}
+
+@media (min-width:768px){
+    .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -60px;
+  }
+}
 /**
 .slider-inner{
   position:relative;
   top: 50%;
   transform: translateY(15%);
 }**/
-
-.vertical-align{
-    display:flex;
-    align-items:center;
-}
 
 @media only screen and (min-width: 961px){
 .social-sidebar{
@@ -738,6 +752,80 @@ ul.social-buttons li a:active {
 
 #toolClick{
     font-size: 40px;
+}
+
+.jssora05r{
+    background-color:gray;
+    border-radius:50px;
+}
+
+.jssora05l{
+    background-color:gray;
+    border-radius:50px;
+}
+
+.slide1{
+    position:relative;
+    z-index:2
+}
+
+.slide1:before{
+    position:absolute;
+    font-family:FontAwesome;
+    font-size:400px;
+    color: rgba(0,136,204,.6);
+    top: -190px;
+    z-index:-1;
+    right: 60px;
+    content: "\f0eb";
+}
+
+.slide2{
+    position:relative;
+    z-index:2
+}
+
+.slide2:before{
+    position:absolute;
+    font-family:FontAwesome;
+    font-size:350px;
+    color: rgba(0,136,204,.6);
+    top: -160px;
+    z-index:-1;
+    right: 60px;
+    content: "\f085";
+}
+
+.slide3{
+    position:relative;
+    z-index:2
+}
+
+.slide3:before{
+    position:absolute;
+    font-family:FontAwesome;
+    font-size:380px;
+    color: rgba(0,136,204,.6);
+    top: -216px;
+    z-index:-1;
+    right: 21px;
+    content: "\f109";
+}
+
+.slide4{
+    position:relative;
+    z-index:2
+}
+
+.slide4:before{
+    position:absolute;
+    font-family:FontAwesome;
+    font-size:339px;
+    color: rgba(0,136,204,.6);
+    top: -140px;
+    z-index:-1;
+    right: 19px;
+    content: "\f1b8";
 }
 /*#map-overlay {
     background-color: rgba(0, 136, 204, 0.25);

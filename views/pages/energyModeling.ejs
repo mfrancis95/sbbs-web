@@ -25,12 +25,6 @@
                             <p class="smooth-scroll pageName" data-ease="easeInOutQuad" data-history="true">Energy Modeling:</p>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">About</a>
-                        </li>
-                        <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#slideshow">Models</a>
-                        </li>
-                        <li>
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#geothermal">Geothermal</a>
                         </li>
                         <li>
@@ -39,6 +33,12 @@
                         <li>
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#netZero">Net Zero</a>
                         </li>
+                        <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#slideshow">Models</a>
+                        </li>
+                         <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">About</a>
+                         </li>
                         <li>
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#tools">Tools</a>
                         </li>
@@ -52,7 +52,7 @@
         <!-- Header -->
         <header style="background-image: url(/static/img/headerImages/lightBulbs.jpg)">
             <div class="container">
-                <div class="intro-text">
+                <div class="intro-text" style="padding-top:300px;">
                     <div class="intro-heading">Energy Modeling Systems</div>
                     <div class="intro-lead-in">Modeling buildings for a more sustainable future. </div>
                 </div>
@@ -61,29 +61,64 @@
         
         <% include ../partials/sideToolbar %>
         
-        <!-- About -->
-        <section id="about">
+        <!-- Geothermal Section -->
+        <section id="geothermal">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Energy Modeling</h2>
+                        <h2 class="section-heading">Geothermal Innovations</h2>
                         <h3 class="section-subheading text-muted"></h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">SBBS provides in-depth building energy optimization for both new 
-                            construction and existing commercial and residential buildings.   We utilize numerous energy modeling programs, 
-                            including but not limited: TMY Based Energy Modeling, Green Building Studio, Insight 360 and Revit Building MEP. 
-                            These programs utilize computer automated drawings along with a description of the building layout, constructions, 
-                            operating schedules, conditioning systems (lighting, HVAC, etc.), and utility rates provided by the user, along 
-                            with weather data, to perform an hourly simulation of the building and to estimate utility bills.
+                        <p style="line-height: 2.5;">Stony Brook Building Science specializes in geothermal energy. 
+                            Geothermal systems use less oil, coal and gas and decrease the emission of greenhouse gasses. Geothermal 
+                            energy is becoming more prevalent due to their eco-friendly ability to lower energy costs.
                         </p>
                     </div>
+                </div>              
+            </div>
+        </section>  
+        
+        <!-- Plant Optimization Section -->
+        <section id="plant" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Plant Optimization</h2>
+                        <div class='row'>
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <p style="line-height: 2.5;">SBBS uses controls to provide efficient operational management 
+                                    for any residence or commercial building. By closely monitoring MEP systems, evaluating the 
+                                    processes in place and taking the essential steps to assure that the plant has the equipment
+                                    that best uses its raw materials, and that this equipment is being used in the most efficient manner. 
+                                </p>
+                            </div>
+                        </div>
+                        <img src="/static/img/energy/plantChiller.jpg" alt=''>
+                    </div>
                 </div>
-                <br>
             </div>
         </section>
+        
+        <!-- Net Zero -->
+        <div id="netZero" style="padding-top:15px; padding-bottom: 15px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Net Zero</h2>
+                        <p style="line-height:2.5;">Our goal is to create the most efficient building models and systems that 
+                            can sustain themselves. By building net zero energy models, we hope to help others 
+                            decrease their carbon footprint and reduce utility costs as much as possible. 
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/static/img/netZero.jpg" class="img-responsive" alt="">
+                    </div>
+                </div><!--/row-->
+            </div><!--/container-->
+        </div>
 
         <section id="slideshow" class="bg-light-gray">
             <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
@@ -130,70 +165,35 @@
                             <!-- Thumbnail Item Skin End -->
                         </div>
                         <!-- Arrow Navigator -->
-                        <span data-u="arrowleft" class="jssora05l" style="background-color: gray; top:158px;left:8px;width:40px;height:40px;"></span>
-                        <span data-u="arrowright" class="jssora05r" style="background-color: gray; top:158px;right:8px;width:40px;height:40px;"></span>
+                        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+                        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
                     </div>
-        </section>
-      
-        <!-- Geothermal Section -->
-        <section id="geothermal">
+        </section>      
+
+        <!-- About -->
+        <section id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Geothermal Innovations</h2>
+                        <h2 class="section-heading">Energy Modeling</h2>
                         <h3 class="section-subheading text-muted"></h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">Stony Brook Building Science specializes in geothermal energy. 
-                            Geothermal systems use less oil, coal and gas and decrease the emission of greenhouse gasses. Geothermal 
-                            energy is becoming more prevalent due to their eco-friendly ability to lower energy costs.
+                        <p style="line-height: 2.5;">SBBS provides in-depth building energy optimization for both new 
+                            construction and existing commercial and residential buildings.   We utilize numerous energy modeling programs, 
+                            including but not limited: TMY Based Energy Modeling, Green Building Studio, Insight 360 and Revit Building MEP. 
+                            These programs utilize computer automated drawings along with a description of the building layout, constructions, 
+                            operating schedules, conditioning systems (lighting, HVAC, etc.), and utility rates provided by the user, along 
+                            with weather data, to perform an hourly simulation of the building and to estimate utility bills.
                         </p>
-                    </div>
-                </div>              
-            </div>
-        </section>        
-
-        <!-- Plant Optimization Section -->
-        <section id="plant" class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Plant Optimization</h2>
-                        <div class='row'>
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <p style="line-height: 2.5;">SBBS uses controls to provide efficient operational management 
-                                    for any residence or commercial building. By closely monitoring MEP systems, evaluating the 
-                                    processes in place and taking the essential steps to assure that the plant has the equipment
-                                    that best uses its raw materials, and that this equipment is being used in the most efficient manner. 
-                                </p>
-                            </div>
-                        </div>
-                        <img src="/static/img/energy/plantChiller.jpg" alt=''>
                     </div>
                 </div>
+                <br>
             </div>
         </section>
-
-        <!-- Net Zero -->
-        <div id="netZero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Net Zero</h2>
-                        <p style="line-height:2.5;">Our goal is to create the most efficient building models and systems that 
-                            can sustain themselves. By building net zero energy models, we hope to help others 
-                            decrease their carbon footprint and reduce utility costs as much as possible. 
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="/static/img/netZero.jpg" class="img-responsive" alt="">
-                    </div>
-                </div><!--/row-->
-            </div><!--/container-->
-        </div>
-
+        
         <!-- Tools -->
         <section id="tools" class="bg-light-gray">
             <div class="container">
