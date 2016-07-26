@@ -34,9 +34,6 @@
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#main-slider">Renewable Power</a>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#services">Services</a>
-                        </li>
-                        <li>
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">About Us</a>
                         </li>
                     </ul>
@@ -162,7 +159,7 @@
             </div> <!-- Container -->
     </section><!--/#main-slider-->     
 
-        <!-- Services Section -->
+    <!-- Services 
         <section id="services" class="text-center">
             <div class="container" style="text-align:center;">
                 <div class="row">
@@ -224,6 +221,7 @@
                 </div>
             </div>
         </section>
+        End Services -->
         
         <!-- About Section -->
         <section id="about" class="bg-light-gray">
@@ -322,7 +320,7 @@
 	    function start() {
 	      //reset timer
 	      percentTime = 0;
-	      isPause = true;
+	      isPause = false;
 	      //run interval every 0.01 second
 	      tick = setInterval(interval, 10);
 	    };

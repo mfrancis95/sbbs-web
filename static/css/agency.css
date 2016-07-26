@@ -36,6 +36,8 @@ a:active,
 a.active {
   color: #fec503;
 }
+
+
 h1,
 h2,
 h3,
@@ -254,7 +256,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/headerImages/brick.jpg');
+  background-image: url('../img/headerImages/sierra332cropped.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -418,7 +420,7 @@ section h3.section-subheading {
   margin-top: 0;
 }
 aside.clients img {
-  margin: 50px auto;
+  margin: 20px auto;
 }
 section#contact {
   background-color: #222222;
@@ -596,6 +598,7 @@ ul.social-buttons li a:active {
     background-color: #0088cc;
     bottom: 60px;
     color: white;
+    border-radius:20px;
     font-size: 32px;
     font-weight: bold;
     height: 50px;
@@ -605,6 +608,11 @@ ul.social-buttons li a:active {
     text-decoration: none;
     width: 50px;
     z-index: 9998;
+}
+
+/** Fixes yellow color bug **/
+.scrollToTop:focus{
+    color:white;
 }
 
 .scrollToTop:hover {
