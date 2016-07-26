@@ -33,11 +33,15 @@
     //Fade in scrollToTop button when view is below the header
     $(window).scroll(function(){
         if ($(this).scrollTop() > $("header").height()) {
-            $(".scrollToTop").fadeIn();
+            $('.scrollToTop').fadeIn(200,function(){});
 	}
         else {
-	    $(".scrollToTop").fadeOut();
+	    $('.scrollToTop').fadeOut(200,function(){});
 	}
+    });
+    
+    $('#scrollUpButton').click(function(){
+        $('#scrollUpButton').fadeOut("slow");
     });
     
     //Load Google Maps

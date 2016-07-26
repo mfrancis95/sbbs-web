@@ -145,7 +145,16 @@ function smoothScroll(position, duration, ease, interruptible, callback) {
         step();
     }
 }
-
+    
+$(window).scroll(function(){
+        if ($(this).scrollTop() > $("header").height()) {
+            $('.scrollToTop').fadeIn(600);
+	}
+        else {
+	    $('.scrollToTop').fadeOut(600);
+	}
+    });
+    
 Element.prototype.smoothScrollify = function() {
     var self = this;
     self.addEventListener("click", function(event) {
