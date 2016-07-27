@@ -17,30 +17,31 @@ app.use("/static", express.static("static", { //Rename the folder from public to
 app.get("/", function(request, response) {
     response.render("pages/index", {
         title: "Stony Brook Building Science",
+        slides: ["energy", "mech", "controls", "power"]
     });
 });
 
 app.get("/energyModeling", function(request, response) {
     response.render("pages/energyModeling", {
-        title: "Energy Modeling",
+        title: "Energy Modeling"
     });
 });
 
 app.get("/mechSystems", function(request, response) {
     response.render("pages/mechSystems", {
-        title: "Mechanical Systems",
+        title: "Mechanical Systems"
     });
 });
 
 app.get("/controls", function(request, response) {
     response.render("pages/controls", {
-        title: "Controls & Automation",
+        title: "Controls & Automation"
     });
 });
 
 app.get("/renewablePower", function(request, response) {
     response.render("pages/renewablePower", {
-        title: "Renewable Power Generation",
+        title: "Renewable Power Generation"
     });
 });
 
