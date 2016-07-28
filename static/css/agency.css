@@ -3,16 +3,13 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-body {
+
+/** GENERAL ELEMENT TAGS **/
+  body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.text-muted {
-  color: white;
-}
-.text-primary {
-  color: #0088cc;
-}
+
 p {
   font-size: 14px;
   line-height: 1.75;
@@ -34,9 +31,8 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: white;
 }
-
 
 h1,
 h2,
@@ -48,6 +44,15 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+/** END GENERAL **/
+
+.text-muted {
+  color: white;
+}
+.text-primary {
+  color: #0088cc;
+}
+
 .img-centered {
   margin: 0 auto;
 }
@@ -172,6 +177,8 @@ fieldset[disabled] .btn-xl.active {
   color: #0088cc;
   background-color: white;
 }
+
+/** NAVBAR CUSTOMIZATION **/
 .navbar-custom {
   z-index: 9999;
   background-color: #222222;
@@ -252,6 +259,8 @@ fieldset[disabled] .btn-xl.active {
     padding: 10px 0;
   }
 }
+/** END NAVBAR **/
+
 header {
   background-image: url('../img/headerImages/sierra332cropped.png');
   background-repeat: no-repeat;
@@ -608,27 +617,26 @@ ul.social-buttons li a:active {
     z-index: 9998;
 }
 
+/** SCROLLTOTOP BUTTON **/
+
 /** Fixes yellow color bug **/
 .scrollToTop:focus{
     color:white;
 }
 
+/** ScrollToTop button dims as hovered **/
 .scrollToTop:hover {
     background-color: #005599;
     color: white;
 }
+/** END SCROLLTOTOP **/
 
+
+/** Element no longer exists. Keep in case re-added.
 .services{
     background: #008899;
 }
-
-.mech{
-    background: #666666;
-}
-
-.power{
-    background: #666666;
-}
+**/ 
 
 .port
 {
@@ -644,7 +652,7 @@ ul.social-buttons li a:active {
 .serviceColumn{
     background-color: #444;
     padding-top:5px;
-    width: 25%;
+    width: 33.3333333333%;
     transition:background-color .4s;
     height: 405px;
 }
@@ -671,58 +679,39 @@ ul.social-buttons li a:active {
     border-style:solid;
 }
 
-.active-icon{
-    color: white;
-}
-
-.owl-prev{
-    position:relative;
-    left: 1em;
-}
-
-.owl-next{
-    position:relative;
-    right:2em;
-}
-
-.slider-inner{
-    padding-top:80px;
-    padding-bottom:80px;
-}
-
+/** HEADER DOWN ARROW **/
 .headerDownArrow{
     transform: scale(12,6);
     color: rgba(255,255,255,.6);
 }
 
 .headerDownArrow:hover{
+    font-size: 1.2em;
     color: white;
 }
+/** END HEADER DOWN ARROW **/
 
+/** Adjusts navbar to minimize spacing between navbar last element and right side of window **/
 @media (min-width:768px){
     .navbar-right{
         margin-right:-35px;
     }
 }
 
+/** Adjusts navbar to fix spacing between SBBS and left side of window  **/
 @media (min-width:768px){
     .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -60px;
   }
 }
-/**
-.slider-inner{
-  position:relative;
-  top: 50%;
-  transform: translateY(15%);
-}**/
 
+/** SIDE TOOLBAR **/
 @media only screen and (min-width: 961px){
 .social-sidebar{
     text-align:center;
     display: block;
-    height: 295px;
+    height: 25em;
     width: 60px;
     position: fixed;
     right: 0;
@@ -754,6 +743,13 @@ ul.social-buttons li a:active {
     font-size: 40px;
 }
 
+/** Sets active page icon to white in toolbar **/
+.active-icon{
+    color: white;
+}
+/** END SIDE TOOLBAR **/
+
+
 .jssora05r{
     background-color:gray;
     border-radius:50px;
@@ -762,6 +758,22 @@ ul.social-buttons li a:active {
 .jssora05l{
     background-color:gray;
     border-radius:50px;
+}
+
+/** SLIDESHOW **/
+.owl-prev{
+    position:relative;
+    left: 1em;
+}
+
+.owl-next{
+    position:relative;
+    right:2em;
+}
+
+.slider-inner{
+    padding-top:80px;
+    padding-bottom:80px;
 }
 
 .slide1{
@@ -787,13 +799,13 @@ ul.social-buttons li a:active {
 
 .slide2:before{
     position:absolute;
-    font-family:FontAwesome;
+    font-family:Material Icons;
     font-size:350px;
     color: rgba(0,136,204,.6);
     top: -160px;
     z-index:-1;
     right: 60px;
-    content: "\f085";
+    content: "\e332";
 }
 
 .slide3{
@@ -827,7 +839,10 @@ ul.social-buttons li a:active {
     right: 19px;
     content: "\f1b8";
 }
-/*#map-overlay {
+/** END SLIDESHOW  **/
+
+
+#map-overlay {
     background-color: rgba(0, 136, 204, 0.25);
     height: 100%;
     left: 0;
@@ -835,9 +850,9 @@ ul.social-buttons li a:active {
     position: absolute;
     top: 0;
     width: 100%;
-}*/
+}
 
-/*::-moz-selection {
+::-moz-selection {
   text-shadow: none;
   background: #0088cc;
 }
@@ -853,4 +868,4 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0088cc;
-}*/
+}

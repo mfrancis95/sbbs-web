@@ -26,19 +26,13 @@
                             <p class="smooth-scroll pageName" data-ease="easeInOutQuad" data-history="true">Controls & Automation:</p>
                         </li>
                         <li>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#main-slider">Images</a>
+                        </li>
+                        <li>
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">About</a>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#images">Images</a>
-                        </li>
-                        <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#design">Design</a>
-                        </li>
-                        <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#integration">Integration</a>
-                        </li>
-                        <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#programming">Programming</a>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#focus">Focus Points</a>
                         </li>
                     </ul>
                 </div>
@@ -53,14 +47,22 @@
                 <div class="intro-text">
                     <div class="intro-heading">Controls & Automation</div>
                     <div class="intro-lead-in">Modeling buildings for a more sustainable future. </div>
+                    <div style="padding-top:90px;">
+                        <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#about">
+                            <i class="fa fa-angle-double-down headerDownArrow"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
 
         <% include ../partials/sideToolbar %>
         
+        <!-- Slideshow -->
+        <% include ../partials/slideshow %>
+        
         <!-- About Section -->
-        <section id="about" class="bg-light-gray">
+        <section id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -77,95 +79,45 @@
             </div>
         </section>        
 
-        <!-- Images Slideshow -->
-        <section id="images">
-            <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
-                        <!-- Loading Screen -->
-                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                            <div style="position:absolute;display:block;background:url('/static/img/slideshow/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+         <!-- Services -->
+            <section id="focus" class="text-center bg-light-gray">
+                <div class="container" style="text-align:center;">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Focus Points</h2>
+                            <h3 class="section-subheading text-muted"></h3>
                         </div>
-                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="/static/img/controls/01.jpg" />
-                                <img data-u="thumb" src="/static/img/controls/01-thumb.jpg" />
+                    </div>
+                    <div class="row text-center serviceRow">
+                            <div class="col-md-4 serviceColumn leftServiceColumn">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-area-chart fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4 class="service-heading">Design</h4>
+                                <p style="height:96px" class="text-muted">Insert design information.</p>
                             </div>
-                            <div data-p="144.50" style="display: none;">
-                                <img data-u="image" src="/static/img/controls/02.jpg" />
-                                <img data-u="thumb" src="/static/img/controls/02-thumb.jpg" />
+                            <div class="col-md-4 serviceColumn borderColumn">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                                </span>
+    
+                                <h4 class="service-heading">Programming</h4>
+                                <p style="height:96px" class="text-muted">Insert programming information.</p>
                             </div>
-                            <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
-
-                        </div>
-                        <!-- Thumbnail Navigator -->
-                        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
-                            <!-- Thumbnail Item Skin Begin -->
-                            <div data-u="slides" style="cursor: default;">
-                                <div data-u="prototype" class="p">
-                                    <div class="w">
-                                        <div data-u="thumbnailtemplate" class="t"></div>
-                                    </div>
-                                    <div class="c"></div>
-                                </div>
+                            <div class="col-md-4 serviceColumn borderColumn">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-puzzle-piece fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4 class="service-heading">Integration</h4>
+                                <p style="height:96px" class="text-muted">Insert integration information.</p>
                             </div>
-                            <!-- Thumbnail Item Skin End -->
-                        </div>
-                        <!-- Arrow Navigator -->
-                        <span data-u="arrowleft" class="jssora05l" style="background-color:gray; top:158px;left:8px;width:40px;height:40px;"></span>
-                        <span data-u="arrowright" class="jssora05r" style="background-color:gray; top:158px;right:8px;width:40px;height:40px;"></span>
-                    </div>
-        </section>
-        
-        <!-- Design Section -->
-       <section id="design" class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Design</h2>
-                        <h3 class="section-subheading text-muted"></h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">Stony Brook Building Science works on designing controls systems.</p>
-                    </div>
-                </div>
-            </div>
-        </section>  
-        
-        <!-- Integration Section -->
-        <section id="integration">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Integration</h2>
-                        <h3 class="section-subheading text-muted"></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">Stony Brook Building Science works on integrating all components.</p>
-                    </div>
-                </div>
-            </div>
-        </section>  
-        
-        <!-- Programming Section -->
-        <section id="programming" class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Programming</h2>
-                        <h3 class="section-subheading text-muted"></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">Stony Brook Building Science works on programming.</p>
-                    </div>
-                </div>
-            </div>
-        </section>  
+            </section>
+            <!-- End Services --> 
         
         <% include ../partials/clients %>
 

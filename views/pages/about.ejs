@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <% include ../partials/topCSS %>
 
     <body id="page-top" class="index">
@@ -23,16 +22,16 @@
                             <a href="#page-top"></a>
                         </li>
                         <li>
-                            <p class="smooth-scroll pageName" data-ease="easeInOutQuad" data-history="true">Mechanical Systems Design:</p>
+                            <p class="smooth-scroll pageName" data-ease="easeInOutQuad" data-history="true">About Us:</p>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">About</a>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">Mission Statement</a>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#main-slider">Slideshow</a>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#team">Team</a>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#piping">Piping Calculations</a>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#mapSection">Map</a>
                         </li>
                     </ul>
                 </div>
@@ -42,10 +41,10 @@
         </nav>
 
         <!-- Header -->
-        <header style="background-image: url(/static/img/headerImages/sierra332cropped.png)">
+        <header style="background-image: url(/static/img/headerImages/power.jpg)">
             <div class="container">
-                <div class="intro-text">
-                    <div class="intro-heading">Mechanical Systems Design</div>
+                <div class="intro-text" style="padding-top:225px;">
+                    <div class="intro-heading">About Us</div>
                     <div class="intro-lead-in">Modeling buildings for a more sustainable future. </div>
                     <div style="padding-top:90px;">
                         <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#about">
@@ -63,40 +62,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Mechanical Systems Design</h2>
+                        <h2 class="section-heading">About</h2>
                         <h3 class="section-subheading text-muted"></h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">Insert information here about Mechanical Systems
-                            information here at Stony Brook Building Science
+                        <p style="line-height: 2.5;">Stony Brook Building Science, LLC. is headquartered 
+                            in the LI High Technology Incubator and specializes in advanced energy
+                            modeling and the development of solutions that optimize the energy efficiency of 
+                            commercial and residential buildings. SBBS uniquely combines the disciplines of 
+                            Energy Modeling, Mechanical Systems design and Building Automation. Efficiency measures
+                            are modeled, designed, and optimally controlled.
                         </p>
-                    </div>
-                </div>                
-            </div>
-        </section>        
-
-        <!-- Slideshow -->
-        <% include ../partials/slideshow %>
-
-        <!-- Piping Calculations -->
-        <section id="piping" class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Piping Calculations</h2>
-                        <h3 class="section-subheading text-muted"></h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">Insert information here about piping calculations here.
-                        </p>
-                    </div>
-                </div>                
             </div>
         </section>
+
+        
 
         <% include ../partials/clients %>
 
@@ -106,7 +90,8 @@
 
         <% include ../partials/footer %>
         <% include ../partials/bottomScripts %>
-       
+        <% include ../partials/readySlideshow %>
+
     </body>
 
 </html>
