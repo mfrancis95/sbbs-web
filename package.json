@@ -11,6 +11,6 @@
     "morgan": "^1.7.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js development"
   }
 }

@@ -10,8 +10,6 @@
     </div>
 </section>
 <script>
-$(document).ready(function () {
-
     var time = 7; // time in seconds
 
     var $progressBar,
@@ -20,6 +18,25 @@ $(document).ready(function () {
         isPause,
         tick,
         percentTime;
+
+function changeSlide(element){
+    console.log(element.innerHTML);
+        switch(element.innerHTML){
+            case "Energy Modeling":
+                $elem.trigger('owl.goTo',0);
+                break;
+            case "Mech. Systems": 
+                $elem.trigger('owl.goTo',1);
+                break;
+            case "Automation &amp; Controls":
+                $elem.trigger('owl.goTo',2);
+                break;
+            default: 
+                $elem.trigger('owl.goTo',3);
+        }
+    }
+
+$(document).ready(function () {
 
                 //Init the carousel
     $("#main-slider").find('.owl-carousel').owlCarousel({
@@ -80,6 +97,7 @@ $(document).ready(function () {
             }
         }
     }
+    
     //pause while dragging 
     function pauseOnDragging() {
         isPause = true;

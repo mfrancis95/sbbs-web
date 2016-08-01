@@ -165,6 +165,9 @@ Element.prototype.smoothScrollify = function() {
             history.pushState(null, null, href);
         }
         var position = document.getElementById(href.slice(1)).offsetTop - document.getElementById("mainNav").offsetHeight+20;
-        smoothScroll(position, dataset.duration, dataset.ease, dataset.interruptible);
+        var callback = !dataset.callback ? null: function() {
+            window[dataset.callback](self);
+        };
+        smoothScroll(position, dataset.duration, dataset.ease, dataset.interruptible,callback);
     });
 };

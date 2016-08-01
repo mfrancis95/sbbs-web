@@ -26,22 +26,22 @@ var indexModel = {
 
 var energyModel = {
     title: "Energy Modeling",
-    slides: ["energy1", "energy2", "energy3", "energy4", "energy5", "energy6", "energy7", "energy8", "energy9"]
+    slides: ["energy/energy1", "energy/energy2", "energy/energy3", "energy/energy4", "energy/energy5", "energy/energy6", "energy/energy7", "energy/energy8", "energy/energy9"]
 };
 
 var mechModel = {
     title: "Mechanical Systems Design",
-    slides: ["mech1","mech2","mech3","mech4","mech5","mech6"]
+    slides: ["mech/mech1","mech/mech2","mech/mech3","mech/mech4","mech/mech5","mech/mech6"]
 };
 
 var controlsModel = {
     title: "Controls & Automation",
-    slides: ["controls1","controls2"]
+    slides: ["controls/controls1","controls/controls2"]
 };
 
 var powerModel = {
     title: "Renewable Power Generation",
-    slides: ["power1","power2","power3","power4","power5"]
+    slides: ["power/power1","power/power2","power/power3","power/power4","power/power5"]
 };
 
 var aboutModel = {
