@@ -681,7 +681,7 @@ ul.social-buttons li a:active {
 
 /** HEADER DOWN ARROW **/
 .headerDownArrow{
-    transform: scale(12,6);
+    transform: scale(10,5);
     color: rgba(255,255,255,.6);
 }
 
@@ -739,7 +739,7 @@ ul.social-buttons li a:active {
     margin: 0 5%;
 }
 
-#toolClick{
+.toolClick{
     font-size: 40px;
 }
 

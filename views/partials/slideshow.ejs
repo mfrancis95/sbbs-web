@@ -3,7 +3,7 @@
         <div class="row">  <!--Row-->
             <div class="owl-carousel">
                 <% for (var i = 0; i < slides.length; i++) { %>
-                    <%- include("../partials/slides/" + slides[i]) %>
+                    <%- include("../partials/slides/" + slidePath + "/" + slides[i]) %>
                 <% } %>
             </div>
         </div>
