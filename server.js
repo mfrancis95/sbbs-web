@@ -24,7 +24,7 @@ app.get("/", function(request, response) {
 app.get("/energyModeling", function(request, response) {
     response.render("pages/energyModeling", {
         title: "Energy Modeling",
-        slides: ["energy1","energy2","energy3","energy4"]
+        slides: ["energy1","energy2","energy3","energy4","energy5","energy6","energy7","energy8","energy9"]
     });
 });
 
@@ -44,7 +44,8 @@ app.get("/controls", function(request, response) {
 
 app.get("/renewablePower", function(request, response) {
     response.render("pages/renewablePower", {
-        title: "Renewable Power Generation"
+        title: "Renewable Power Generation",
+        slides: ["power1","power2","power3","power4","power5"]
     });
 });
 
