@@ -1,0 +1,5 @@
+{
+    "maxAge": 1209600000,
+    "minify": true,
+    "port": 80
+}
