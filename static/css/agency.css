@@ -508,17 +508,18 @@ ul.social-buttons {
 }
 ul.social-buttons li a {
   display: block;
-  background-color: #222222;
+  background-color: #242424;
   height: 40px;
   width: 40px;
   border-radius: 100%;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 40px;
   color: white;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  margin-left:20px;
 }
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
@@ -601,7 +602,7 @@ ul.social-buttons li a:active {
   display: none;
 }
 
-.scrollToTop {
+#scrollToTop {
     background-color: #0088cc;
     bottom: 60px;
     color: white;
@@ -620,12 +621,12 @@ ul.social-buttons li a:active {
 /** SCROLLTOTOP BUTTON **/
 
 /** Fixes yellow color bug **/
-.scrollToTop:focus{
+#scrollToTop:focus{
     color:white;
 }
 
 /** ScrollToTop button dims as hovered **/
-.scrollToTop:hover {
+#scrollToTop:hover {
     background-color: #005599;
     color: white;
 }
@@ -707,14 +708,42 @@ ul.social-buttons li a:active {
 }
 
 /** SIDE TOOLBAR **/
-@media only screen and (min-width: 961px){
+.social-sidebar{
+    text-align:center;
+    display: -webkit-flex;
+    display: flex;
+    height: 4em;
+    -webkit-flex-direction:row;
+    flex-direction:row;
+    width: 19em;
+    margin-right:auto;
+    margin-left:auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 100001;
+    padding: .4em 15px 1em 4px;
+    background: #000;
+    border-radius: 17px 17px 0 0;
+    border: 2px solid #fff;
+    border-right: 0 none;
+    box-shadow: 0 0 5px #333;
+}
+
+.toolClick{
+    -webkit-flex: 1;
+    flex:1;
+    font-size:2.3em;
+}
+
+@media (min-width:560px){
 .social-sidebar{
     text-align:center;
     display: block;
-    height: 25em;
+    height: 22em;
     width: 60px;
     position: fixed;
     right: 0;
+    left:inherit;
     top: 110px;
     z-index: 100001;
     padding: 15px 14px 4px 16px;
@@ -724,7 +753,37 @@ ul.social-buttons li a:active {
     border-right: 0 none;
     box-shadow: 0 0 5px #333;
     }
+    
+    .toolClick{
+        font-size:2.5em;
+    }
+}
+
+@media only screen and (min-width: 961px){
+.social-sidebar{
+    text-align:center;
+    display: block;
+    height: 25em;
+    width: 60px;
+    position: fixed;
+    right: 0;
+    left:inherit;
+    top: 110px;
+    z-index: 100001;
+    padding: 15px 14px 4px 16px;
+    background: #000;
+    border-radius: 17px 0 0 17px;
+    border: 2px solid #fff;
+    border-right: 0 none;
+    box-shadow: 0 0 5px #333;
+    }
+    
+.toolClick{
+    font-size: 2.9em;
+}
 }   
+
+
 
 @media only screen and (min-width: 560px){
 .social-sidebar {
@@ -736,11 +795,7 @@ ul.social-buttons li a:active {
 .social-sidebar .sidebar-wrapper {
     display: block;
     width: 90%;
-    margin: 0 5%;
-}
-
-.toolClick{
-    font-size: 40px;
+    margin: 0 3%;
 }
 
 /** Sets active page icon to white in toolbar **/
@@ -841,6 +896,9 @@ ul.social-buttons li a:active {
 }
 /** END SLIDESHOW  **/
 
+#google-map {
+  height: 350px;
+}
 
 #map-overlay {
     background-color: rgba(0, 136, 204, 0.25);

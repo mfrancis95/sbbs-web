@@ -148,10 +148,10 @@ function smoothScroll(position, duration, ease, interruptible, callback) {
     
 $(window).scroll(function(){
         if ($(this).scrollTop() > $("header").height()) {
-            $('.scrollToTop').fadeIn(600);
+            $('#scrollToTop').fadeIn(600);
 	}
         else {
-	    $('.scrollToTop').fadeOut(600);
+	    $('#scrollToTop').fadeOut(600);
 	}
     });
     
@@ -164,7 +164,7 @@ Element.prototype.smoothScrollify = function() {
         if (dataset.history) {
             history.pushState(null, null, href);
         }
-        var position = document.getElementById(href.slice(1)).offsetTop - document.getElementById("mainNav").offsetHeight+20;
+        var position = document.getElementById(href.slice(1)).offsetTop - document.getElementById("mainNav").offsetHeight;
         var callback = !dataset.callback ? null: function() {
             window[dataset.callback](self);
         };

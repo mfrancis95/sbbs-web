@@ -31,7 +31,7 @@
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#team">Team</a>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#mapSection">Map</a>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#google-map">Map</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +48,7 @@
                     <div class="intro-lead-in">Modeling buildings for a more sustainable future. </div>
                     <div style="padding-top:90px;">
                         <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#about">
-                            <i class="fa fa-angle-double-down headerDownArrow"></i>
+                            <i class="fa fa-angle-down headerDownArrow"></i>
                         </a>
                     </div>
                 </div>
@@ -79,19 +79,28 @@
                 </div>
             </div>
         </section>
-
         
+        <!-- Team Section -->
+        <section id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Team Members</h2>
+                        <h3 class="section-subheading text-muted"></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <p style="line-height: 2.5;">Insert information about our team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="google-map" class="wow fadeIn" data-latitude="40.9123180" data-longitude="-73.1139380" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
 
-        <% include ../partials/clients %>
-
-        <a class="scrollToTop smooth-scroll" data-ease="easeInQuad" data-history="true" href="#page-top" style="display: none;">
-            <i class="fa fa-angle-up"></i>
-        </a>
-
-        <% include ../partials/footer %>
-        <% include ../partials/bottomScripts %>
-        <% include ../partials/readySlideshow %>
-
+       <% include ../partials/footer %>
     </body>
 
 </html>
