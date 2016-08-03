@@ -164,7 +164,8 @@ Element.prototype.smoothScrollify = function() {
         if (dataset.history) {
             history.pushState(null, null, href);
         }
-        var position = document.getElementById(href.slice(1)).offsetTop - document.getElementById("mainNav").offsetHeight;
+        //Change 72 to a jQuery call that grabs the toolbar's height
+        var position = document.getElementById(href.slice(1)).offsetTop - 72;
         var callback = !dataset.callback ? null: function() {
             window[dataset.callback](self);
         };
