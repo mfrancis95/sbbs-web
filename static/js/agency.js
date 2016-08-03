@@ -85,7 +85,7 @@
                     var href = navItem.attr("href");
                     //Set active toolbar link based on current slide in #main-slider
                     if (href === "#main-slider") {
-                        //TO DO
+                        //
                     }
                     //Otherwise set active toolbar link based on the element on the page
                     else if (href.startsWith("#")) {

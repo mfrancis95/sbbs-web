@@ -164,8 +164,20 @@ Element.prototype.smoothScrollify = function() {
         if (dataset.history) {
             history.pushState(null, null, href);
         }
-        //Change 72 to a jQuery call that grabs the toolbar's height
-        var position = document.getElementById(href.slice(1)).offsetTop - 72;
+ 
+        var offset=72;
+        if(window.innerWidth<768){
+            if($("#bs-example-navbar-collapse-1").hasClass("collapsing")){
+                offset=$(".navbar-header").innerHeight();
+            }
+            else{
+                offset=$("#mainNav").innerHeight();
+            }
+        }
+        else{
+            offset=$("#mainNav").innerHeight();
+        }
+        var position = document.getElementById(href.slice(1)).offsetTop - offset;
         var callback = !dataset.callback ? null: function() {
             window[dataset.callback](self);
         };
