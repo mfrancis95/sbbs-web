@@ -34,6 +34,13 @@ a.active {
   color: white;
 }
 
+header{
+    display:flex;
+    align-items:items;
+    display: webkit flex;
+    height:100vh;
+}
+
 h1,
 h2,
 h3,
@@ -276,9 +283,28 @@ header {
 }
 
 header .intro-text {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 50px;
 }
+
+@media (min-width:560px){
+header .intro-text{
+    padding-top: 150px;
+}
+}
+
+@media (min-width:992px){
+header .intro-text{
+    padding-top: 200px;
+}
+}
+
+@media (max-width:560px){
+.variableCenter{
+    text-align:center;
+}
+}
+
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
@@ -296,9 +322,10 @@ header .intro-text .intro-heading {
   margin-bottom: 25px;
   text-shadow: 6px -4px 0 #444;
 }
+
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
+    padding-top: 180px;
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
@@ -317,6 +344,29 @@ header .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: 992px) {
+  header .intro-text {
+    padding-top: 230px;
+    padding-bottom: 200px;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+}
+
 section {
   padding: 100px 0;
 }
@@ -331,17 +381,12 @@ section h3.section-subheading {
   text-transform: none;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   section {
     padding: 50px 0;
   }
-}
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
-  color:white;
 }
 
 #portfolio .portfolio-item {
@@ -650,34 +695,74 @@ ul.social-buttons li a:active {
     margin-right: 30px;
 }
 
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+  color:white;
+}
+
+.serviceRow{
+    width:100%;
+    height:420px;
+    background-color: #444;
+    border-color: rgba(255,255,255,.5);
+    border-radius:10px;
+}
+
 .serviceColumn{
+    padding-bottom:20px;
     background-color: #444;
     padding-top:5px;
-    width: 33.3333333333%;
     transition:background-color .4s;
-    height: 405px;
+}
+
+@media (min-width:992px){
+.serviceColumn{
+    height:100%
+}
 }
 
 .leftServiceColumn{
     border-color: rgba(255,255,255,.5);
-    border-width: 0 0 0 0;
+    border-width: 0;
     border-top-left-radius:10px;
-    border-bottom-left-radius:10px;
+    border-top-right-radius:10px;
 }
 
 .rightServiceColumn{
-    border-top-right-radius: 10px;
+    border-color: rgba(255,255,255,.5);
+    border-width: 0;
+    border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
 }
+
+@media (min-width:992px){
+    .leftServiceColumn{
+        border-bottom-left-radius:10px;
+    }
+    
+    .rightServiceColumn{
+        border-top-right-radius:10px;
+    }
+}
+
 
 .serviceColumn:hover{
     background-color: #0088cc;
 }
 
 .borderColumn{
+    border-color: rgba(255,255,255,.5);
+    border-style:solid;
+    border-width: 1px 0 0 0;
+}
+
+@media (min-width:992px){
+.borderColumn{
     border-color:rgba(255,255,255,.5);
     border-width: 0 0 0 1px;
     border-style:solid;
+}
 }
 
 /** HEADER DOWN ARROW **/
@@ -715,7 +800,7 @@ ul.social-buttons li a:active {
     height: 4em;
     -webkit-flex-direction:row;
     flex-direction:row;
-    width: 19em;
+    width: 21em;
     margin-right:auto;
     margin-left:auto;
     position: fixed;
@@ -725,7 +810,7 @@ ul.social-buttons li a:active {
     background: #000;
     border-radius: 17px 17px 0 0;
     border: 2px solid #fff;
-    border-right: 0 none;
+    border-bottom: 0 none;
     box-shadow: 0 0 5px #333;
 }
 
@@ -745,7 +830,6 @@ ul.social-buttons li a:active {
     right: 0;
     left:inherit;
     top: 110px;
-    z-index: 100001;
     padding: 15px 14px 4px 16px;
     background: #000;
     border-radius: 17px 0 0 17px;
@@ -759,7 +843,7 @@ ul.social-buttons li a:active {
     }
 }
 
-@media only screen and (min-width: 961px){
+@media only screen and (min-width: 992px){
 .social-sidebar{
     text-align:center;
     display: block;
@@ -768,8 +852,6 @@ ul.social-buttons li a:active {
     position: fixed;
     right: 0;
     left:inherit;
-    top: 110px;
-    z-index: 100001;
     padding: 15px 14px 4px 16px;
     background: #000;
     border-radius: 17px 0 0 17px;
