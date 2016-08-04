@@ -202,7 +202,6 @@ fieldset[disabled] .btn-xl.active {
   color: #0088CC;
 }
 .navbar-custom .navbar-collapse {
-  width: 1190px;
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
@@ -267,6 +266,12 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 /** END NAVBAR **/
+
+@media (min-width: 930px){
+.navbar-toggle {
+    display: none;
+}
+}
 
 header {
   background-image: url('../img/headerImages/sierra332cropped.png');
@@ -775,6 +780,16 @@ ul.social-buttons li a:active {
     font-size: 1.2em;
     color: white;
 }
+
+.headerArrowContainer{
+    position:absolute;
+    right:0;
+    left:0;
+    margin-right:auto;
+    margin-left:auto;
+    bottom:70px;
+}
+
 /** END HEADER DOWN ARROW **/
 
 /** Adjusts navbar to minimize spacing between navbar last element and right side of window **/
@@ -898,6 +913,10 @@ ul.social-buttons li a:active {
 }
 
 /** SLIDESHOW **/
+.paginationBar{
+    background-color: #242424;
+}
+
 .owl-prev{
     position:relative;
     left: 1em;
@@ -977,6 +996,12 @@ ul.social-buttons li a:active {
     content: "\f1b8";
 }
 /** END SLIDESHOW  **/
+
+.navbarButtons{
+    position:absolute;
+    margin-right:30px;
+    right:5px;
+}
 
 #google-map {
   height: 350px;
