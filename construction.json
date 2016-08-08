@@ -1,0 +1,5 @@
+{
+    "construction": true,
+    "minify": true,
+    "port": 80
+}

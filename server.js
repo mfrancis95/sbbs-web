@@ -10,7 +10,9 @@ if (config.minify) {
     app.use(require("express-minify")());
 }
 
-app.use(require("morgan")("common"));
+if (config.logging) {
+    app.use(require("morgan")("common"));
+}
 
 app.use("/static", express.static("static", {
     maxAge: config.maxAge ? config.maxAge : 0
@@ -51,29 +53,35 @@ var aboutModel = {
 //Routes
 //Add a route for each view under views/pages
 
+var indexPage = "pages/" + (config.construction ? "construction" : "index");
+
 app.get("/", function(request, response) {
-    response.render("pages/index", indexModel);
+    response.render(indexPage, indexModel);
 });
 
-app.get("/energyModeling", function(request, response) {
-    response.render("pages/energyModeling", energyModel);
-});
+if (!config.construction) {
+    
+    app.get("/energyModeling", function(request, response) {
+        response.render("pages/energyModeling", energyModel);
+    });
 
-app.get("/mechSystems", function(request, response) {
-    response.render("pages/mechSystems", mechModel);
-});
+    app.get("/mechSystems", function(request, response) {
+        response.render("pages/mechSystems", mechModel);
+    });
 
-app.get("/controls", function(request, response) {
-    response.render("pages/controls", controlsModel);
-});
+    app.get("/controls", function(request, response) {
+        response.render("pages/controls", controlsModel);
+    });
 
-app.get("/renewablePower", function(request, response) {
-    response.render("pages/renewablePower", powerModel);
-});
+    app.get("/renewablePower", function(request, response) {
+        response.render("pages/renewablePower", powerModel);
+    });
 
-app.get("/about",function(request,response){
-    response.render("pages/about", aboutModel);
-});
+    app.get("/about", function(request, response) {
+        response.render("pages/about", aboutModel);
+    });
+    
+}
 
 app.listen(config.port, function() {
     console.log("Started web server.");
