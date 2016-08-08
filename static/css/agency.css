@@ -694,12 +694,6 @@ ul.social-buttons li a:active {
     background: #008899;
 }
 
-.pageName{
-    color:#0088CC;
-    font-size: 24px;
-    margin-right: 30px;
-}
-
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -932,75 +926,104 @@ ul.social-buttons li a:active {
     padding-bottom:80px;
 }
 
-.slide1{
+/** Common Slide Properties **/
+.homepage_slide{
     position:relative;
-    z-index:2
+    z-index:2;
 }
 
-.slide1:before{
+/** Energy Modeling **/
+#energySlide:before{
     position:absolute;
     font-family:FontAwesome;
     font-size:400px;
     color: rgba(0,136,204,.6);
     top: -190px;
-    z-index:-1;
     right: 60px;
-    content: "\f0eb";
+    z-index:-1;
+    content: "\f080";
 }
 
-.slide2{
-    position:relative;
-    z-index:2
-}
-
-.slide2:before{
+/** Mechanical Systems Design **/
+#mechSlide:before{
     position:absolute;
     font-family:Material Icons;
     font-size:350px;
     color: rgba(0,136,204,.6);
     top: -160px;
-    z-index:-1;
     right: 60px;
+    z-index:-1;
     content: "\e332";
 }
 
-.slide3{
-    position:relative;
-    z-index:2
-}
-
-.slide3:before{
+/** Controls **/
+#controlsSlide:before{
     position:absolute;
     font-family:FontAwesome;
     font-size:380px;
     color: rgba(0,136,204,.6);
     top: -216px;
-    z-index:-1;
     right: 21px;
+    z-index:-1;
     content: "\f109";
 }
 
-.slide4{
-    position:relative;
-    z-index:2
-}
-
-.slide4:before{
+/** Power **/
+#powerSlide:before{
     position:absolute;
     font-family:FontAwesome;
     font-size:339px;
     color: rgba(0,136,204,.6);
     top: -140px;
-    z-index:-1;
     right: 19px;
+    z-index:-1;
     content: "\f1b8";
 }
 /** END SLIDESHOW  **/
 
 .navbarButtons{
     position:absolute;
-    margin-right:30px;
+    margin-right:35px;
     right:5px;
+    background-color:#222222;
+}
+
+.pageName{
+    color:#0088CC;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+@media (min-width:768px){
+    .listFont{
+        font-size:10px;
+    }
+
+    .pageName{
+        font-size:16px;
+    }
+}
+
+
+
+@media (min-width:992px){
+    .listFont{
+        font-size:12px;
+    }
+    
+    .pageName{
+        font-size:20px;
+    }
+}
+
+@media (min-width:1100px){
+    .listFont{
+        font-size:14px;
+    }
+    
+    .pageName{
+        font-size:24px;
+    }
 }
 
 #google-map {

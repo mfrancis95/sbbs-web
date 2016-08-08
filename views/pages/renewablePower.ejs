@@ -17,7 +17,7 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="navbarButtons collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right" style="font-size:1.1vw;">
+                    <ul class="nav navbar-nav navbar-right listFont">
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
@@ -28,13 +28,7 @@
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#about">About</a>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#pv">PV</a>
-                        </li>
-                        <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#wind">Wind</a>
-                        </li>
-                        <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#fuelCell">Fuel Cell</a>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#focus">Areas of Practice</a>
                         </li>
                         <li>
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#main-slider">Slideshow</a>
@@ -81,69 +75,60 @@
                 <br>
             </div>
         </section>
-
-        <!-- PV Section -->
-        <section id="pv">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">PV</h2>
-                        <h3 class="section-subheading text-muted"></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">Design and Analysis of PV systems. Includes cost and 
-                        savings analysis, power generation potential, shading analysis, 3D Design and Layout Design.
-                        </p>
-                    </div>
-                </div>
-                <br>
-            </div>
-        </section>
         
-        <!-- Wind Section -->
-        <section id="wind" class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Wind</h2>
-                        <h3 class="section-subheading text-muted"></h3>
+        <!-- Services -->
+            <section id="focus" class="text-center">
+                <div class="container" style="text-align:center; width:92%;">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Areas of Practice</h2>
+                            <h3 class="section-subheading"></h3>
+                        </div>
+                    </div>
+                    <div class="row text-center serviceRow">
+                            <div class="col-md-4 col-xs-12 serviceColumn leftServiceColumn">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-area-chart fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4 class="service-heading">PV</h4>
+                                <p class="text-muted">Design and Analysis of PV 
+                                systems. Includes cost and savings analysis, 
+                                power generation potential, shading analysis, 
+                                3D Design and Layout Design.</p>
+                            </div>
+                            <div class="col-md-4 col-xs-12 serviceColumn borderColumn">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                                </span>
+    
+                                <h4 class="service-heading">Wind</h4>
+                                <p class="text-muted">Design and Analysis of 
+                                    wind power production. Using TMY based data 
+                                    and geographical analysis, SBBS provides 
+                                    cost and savings analysis, power generation 
+                                    potential, 3D Design and layout design of 
+                                    wind farm and transmissibility.</p>
+                            </div>
+                            <div class="col-md-4 col-xs-12 serviceColumn rightServiceColumn borderColumn">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-puzzle-piece fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4 class="service-heading">Fuel Cell</h4>
+                                <p class="text-muted">Stationary fuel cells are 
+                                    used for commercial, industrial, and 
+                                    residential primary and backup power 
+                                    generation.  Our company provides cost and 
+                                    savings analysis, power generation 
+                                    potential, and fuel cell comparability.
+                                </p>
+                            </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">Design and Analysis of wind power production. 
-                            Using TMY based data and geographical analysis, SBBS provides cost and 
-                            savings analysis, power generation potential, 3D Design and layout design 
-                            of wind farm and transmissibility.
-                        </p>
-                    </div>
-                </div>
-                <br>
-            </div>
-        </section>
-        
-        <!-- Fuel Cell Section -->
-        <section id="fuelCell">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Fuel Cell</h2>
-                        <h3 class="section-subheading text-muted"></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">Stationary fuel cells are used for commercial, industrial, 
-                         and residential primary and backup power generation.  Our company provides cost and 
-                         savings analysis, power generation potential, and fuel cell comparability.
-                        </p>
-                    </div>
-                </div>
-                <br>
-            </div>
-        </section>
+            </section>
+            <!-- End Services --> 
         
         <% include ../partials/slideshow %>
 

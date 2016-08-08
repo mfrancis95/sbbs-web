@@ -83,8 +83,9 @@
                 for (var i = navItems.length - 1; i >= 0; i--) {
                     var navItem = navItems.eq(i);
                     var href = navItem.attr("href");
+                    var pageTitle = $('title').text();
                     //Set active toolbar link based on current slide in #main-slider
-                    if (href === "#main-slider") {
+                    if (href === "#main-slider" && pageTitle==="Stony Brook Building Science") {
                        //
                     }
                     //Otherwise set active toolbar link based on the element on the page

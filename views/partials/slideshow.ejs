@@ -20,18 +20,23 @@
         percentTime;
 
 function changeSlide(element){
-        switch(element.innerHTML){
-            case "Energy Modeling":
-                $elem.trigger('owl.goTo',0);
-                break;
-            case "Mech. Systems": 
-                $elem.trigger('owl.goTo',1);
-                break;
-            case "Automation &amp; Controls":
-                $elem.trigger('owl.goTo',2);
-                break;
-            default: 
-                $elem.trigger('owl.goTo',3);
+        console.log("Current Slide is: " + $("#main-slider").currentItem + " and clicked was " + element.innerHTML);
+        if ($("#main-slider").currentItem===element.innerHTML)
+            $elem.trigger("owl.reinit");
+        else{
+            switch(element.innerHTML){
+                case "Energy Modeling":
+                    $elem.trigger('owl.goTo',0);
+                    break;
+                case "Mech. Systems": 
+                    $elem.trigger('owl.goTo',1);
+                    break;
+                case "Automation &amp; Controls":
+                    $elem.trigger('owl.goTo',2);
+                    break;
+                default:
+                    $elem.trigger('owl.goTo',3);
+            }
         }
     }
 
