@@ -41,14 +41,12 @@
         </nav>
 
         <!-- Header -->
-        <header style="background-image: url(/static/img/headerImages/power.jpg)">
+        <header style="background-image: url(/static/img/headerImages/about-bg.jpg)">
             <div class="container">
                 <div class="intro-text" style="padding-top:225px;">
-                    <div class="intro-heading">About Us</div>
-                    <div class="intro-lead-in">Modeling buildings for a more sustainable future. </div>
                     <div class="headerArrowContainer">
                         <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href="#about">
-                            <i class="fa fa-angle-down headerDownArrow"></i>
+                            <i style="color:gray;" class="fa fa-angle-down headerDownArrow"></i>
                         </a>
                     </div>
                 </div>
@@ -79,28 +77,96 @@
                 </div>
             </div>
         </section>
-        
-        <!-- Team Section -->
+
+        <!-- Team -->
         <section id="team">
             <div class="container">
-                <div class="row">
+                <div class="row mar-bot40">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Team Members</h2>
-                        <h3 class="section-subheading text-muted"></h3>
+                        <div class="section-header">
+                            <h2 class="section-heading">Our Team</h2>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <p style="line-height: 2.5;">Insert information about our team.
-                        </p>
+
+                <div class="row text-center mar-bot40">
+                    <div class="col-md-2">
+                        <div class="team-member">
+                            <figure class="member-photo"><img src="/static/img/team/will.png" alt="" /></figure>
+                            <div class="team-detail">
+                                <h4>Will Becchina</h4>
+                                <i>
+                                    President
+                                </i>
+                                <br><br>
+                                <p>
+                                    Founder and President Will Becchina has 
+                                    extensive experience in HVAC, green building 
+                                    technologies, Building Information 
+                                    Modeling (BIM), and cost/benefit analysis 
+                                    of renewable energy alternatives.  He teaches 
+                                    a graduate-level course in building energy 
+                                    management at Stony Brook University and 
+                                    leads a dedicated team of experts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="team-member">
+                            <figure class="member-photo"><img src="/static/img/team/member1.jpg" alt="" /></figure>
+                            <div class="team-detail">
+                                <h4>Jacqueline McGlynn</h4>
+                                <span>Insert role</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="team-member">
+                            <figure class="member-photo"><img src="/static/img/team/member1.jpg" alt="" /></figure>
+                            <div class="team-detail">
+                                <h4>Jessica Jolley</h4>
+                                <span>Insert role</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="team-member">
+                            <figure class="member-photo"><img src="/static/img/team/member1.jpg" alt="" /></figure>
+                            <div class="team-detail">
+                                <h4>Siqi Zuo</h4>
+                                <span>Insert role</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="team-member">
+                            <figure class="member-photo"><img src="/static/img/team/member1.jpg" alt="" /></figure>
+                            <div class="team-detail">
+                                <h4>Michael Francis</h4>
+                                <span>Insert role</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="team-member">
+                            <figure class="member-photo"><img src="/static/img/team/member1.jpg" alt="" /></figure>
+                            <div class="team-detail">
+                                <h4>Daniel Keefe</h4>
+                                <span>Insert role</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
-        
-        <div id="google-map" class="wow fadeIn" data-latitude="40.9123180" data-longitude="-73.1139380" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+        <!-- Team -->
 
-       <% include ../partials/footer %>
+        <div id="google-map" class="bg-light-gray wow fadeIn" data-latitude="40.9123180" data-longitude="-73.1139380" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+
+        <% include ../partials/footer %>
     </body>
 
 </html>

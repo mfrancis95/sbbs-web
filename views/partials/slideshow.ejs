@@ -19,25 +19,31 @@
         tick,
         percentTime;
 
+var navItems = $(".nav li a");
+var active = navItems.eq(1).parent();
+
 function changeSlide(element){
-        console.log("Current Slide is: " + $("#main-slider").currentItem + " and clicked was " + element.innerHTML);
-        if ($("#main-slider").currentItem===element.innerHTML)
-            $elem.trigger("owl.reinit");
-        else{
-            switch(element.innerHTML){
-                case "Energy Modeling":
-                    $elem.trigger('owl.goTo',0);
-                    break;
-                case "Mech. Systems": 
-                    $elem.trigger('owl.goTo',1);
-                    break;
-                case "Automation &amp; Controls":
-                    $elem.trigger('owl.goTo',2);
-                    break;
-                default:
-                    $elem.trigger('owl.goTo',3);
+        //make next/prev buttons and automatic interval funnel into this function to fix
+        //active problems.
+        active.removeClass("active");
+    
+        switch(element.innerHTML){
+            case "Energy Modeling":
+                $elem.trigger('owl.goTo',0);
+                active = navItems.eq(1).parent().addClass("active");
+                break;
+            case "Mech. Systems": 
+                $elem.trigger('owl.goTo',1);
+                active = navItems.eq(2).parent().addClass("active");
+                break;
+            case "Automation &amp; Controls":
+                $elem.trigger('owl.goTo',2);
+                active = navItems.eq(3).parent().addClass("active");
+                break;
+            default:
+                $elem.trigger('owl.goTo',3);
+                active = navItems.eq(4).parent().addClass("active");
             }
-        }
     }
 
 $(document).ready(function () {

@@ -43,10 +43,6 @@
 	}
     });
     
-    $('#scrollUpButton').click(function(){
-        $('#scrollUpButton').fadeOut("slow");
-    });
-    
     //Google Map
 	var latitude = $('#google-map').data('latitude')
 	var longitude = $('#google-map').data('longitude')
