@@ -223,10 +223,14 @@ fieldset[disabled] .btn-xl.active {
   letter-spacing: 1px;
   color: white;
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
+.navbar-custom .nav li a:hover {
   color: #0088cc;
   outline: none;
+}
+
+.navbar-custom .nav li a:focus{
+    color: white;
+    outline:none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
@@ -947,13 +951,13 @@ ul.social-buttons li a:active {
 /** Mechanical Systems Design **/
 #mechSlide:before{
     position:absolute;
-    font-family:Material Icons;
+    font-family:FontAwesome;
     font-size:350px;
     color: rgba(0,136,204,.6);
     top: -160px;
     right: 60px;
     z-index:-1;
-    content: "\e332";
+    content: "\f1b3";
 }
 
 /** Controls **/
@@ -1027,7 +1031,7 @@ ul.social-buttons li a:active {
 }
 
 #google-map {
-  height: 350px;
+  height: 400px;
 }
 
 #map-overlay {

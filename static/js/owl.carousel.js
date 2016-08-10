@@ -1,3 +1,7 @@
+var slideIndex = 0;
+var navItems = $(".nav li a");
+var active = navItems.eq(1).parent();
+
 "function" != typeof Object.create && (Object.create = function (t) {
     function e() {}
     return e.prototype = t, new e
@@ -208,7 +212,7 @@
                             return e.currentItem = e.maximumItem, !1;
                         e.currentItem = 0, t = "rewind"
                     }
-                    e.goTo(e.currentItem, t)
+                    e.goTo(e.currentItem, t);
                 },
                 prev: function (t) {
                     var e = this;
@@ -219,9 +223,24 @@
                             return e.currentItem = 0, !1;
                         e.currentItem = e.maximumItem, t = "rewind"
                     }
-                    e.goTo(e.currentItem, t)
+                    e.goTo(e.currentItem, t);
+                },
+                adjustActive: function(t){
+                    active.removeClass("active");
+                    if(slideIndex===t){
+                        //possibly add in here code to reset interval instead of doing nothing
+                    }
+                    else{
+                        active = navItems.eq(t+1).parent().addClass("active");
+                        slideIndex = t;
+                    }
                 },
                 goTo: function (t, o, i) {
+                    if(document.title==="Stony Brook Building Science"){
+                        this.adjustActive(t);
+                    }
+                    //t represents the 0-based index of what slide to go to
+                    
                     var n, s = this;
                     return s.isTransition ? !1 : ("function" == typeof s.options.beforeMove && s.options.beforeMove.apply(this, [s.$elem]), t >= s.maximumItem ? t = s.maximumItem : 0 >= t && (t = 0), s.currentItem = s.owl.currentItem = t, s.options.transitionStyle !== !1 && "drag" !== i && 1 === s.options.items && s.browser.support3d === !0 ? (s.swapSpeed(0), s.browser.support3d === !0 ? s.transition3d(s.positionsInArray[t]) : s.css2slide(s.positionsInArray[t], 1), s.afterGo(), s.singleItemTransition(), !1) : (n = s.positionsInArray[t], s.browser.support3d === !0 ? (s.isCss3Finish = !1, o === !0 ? (s.swapSpeed("paginationSpeed"), e.setTimeout(function () {
                         s.isCss3Finish = !0
