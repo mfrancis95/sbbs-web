@@ -746,6 +746,7 @@ ul.social-buttons li a:active {
     
     .rightServiceColumn{
         border-top-right-radius:10px;
+        border-bottom-left-radius:0px;
     }
 }
 
@@ -926,8 +927,15 @@ ul.social-buttons li a:active {
 }
 
 .slider-inner{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+@media(min-width:830px){
+.slider-inner{
     padding-top:80px;
     padding-bottom:80px;
+}
 }
 
 /** Common Slide Properties **/
@@ -936,14 +944,15 @@ ul.social-buttons li a:active {
     z-index:2;
 }
 
+@media(min-width:560px){
 /** Energy Modeling **/
 #energySlide:before{
     position:absolute;
     font-family:FontAwesome;
-    font-size:400px;
+    font-size:50vh;
     color: rgba(0,136,204,.6);
-    top: -190px;
-    right: 60px;
+    top: -60px;
+    right: -60px;
     z-index:-1;
     content: "\f080";
 }
@@ -952,10 +961,10 @@ ul.social-buttons li a:active {
 #mechSlide:before{
     position:absolute;
     font-family:FontAwesome;
-    font-size:350px;
+    font-size:50vh;
     color: rgba(0,136,204,.6);
-    top: -160px;
-    right: 60px;
+    top: -60px;
+    right: -60px;
     z-index:-1;
     content: "\f1b3";
 }
@@ -964,10 +973,10 @@ ul.social-buttons li a:active {
 #controlsSlide:before{
     position:absolute;
     font-family:FontAwesome;
-    font-size:380px;
+    font-size:50vh;
     color: rgba(0,136,204,.6);
-    top: -216px;
-    right: 21px;
+    top: -60px;
+    right: -60px;
     z-index:-1;
     content: "\f109";
 }
@@ -976,12 +985,13 @@ ul.social-buttons li a:active {
 #powerSlide:before{
     position:absolute;
     font-family:FontAwesome;
-    font-size:339px;
+    font-size:50vh;
     color: rgba(0,136,204,.6);
-    top: -140px;
-    right: 19px;
+    top: -60px;
+    right: -60px;
     z-index:-1;
     content: "\f1b8";
+}
 }
 /** END SLIDESHOW  **/
 
