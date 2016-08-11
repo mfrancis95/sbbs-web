@@ -1088,3 +1088,32 @@ body {
 .mar-bot40 {
 	margin-bottom: 40px;
 }
+
+/**Meet The Team**/
+
+#meet-team {
+  padding: 100px 0;
+}
+
+  .teem-member {
+    padding: 13px;
+    background: #eeeeee;
+    border: 2px solid #eeeeee;
+    transition: border-color 400ms;
+    -webkit-transition: border-color 400ms;
+    } 
+    
+    .team-img {
+      margin: -15px -15px 0 -15px;
+      text-align:center;
+    }
+
+    .team-info {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #dbdbdb;
+      margin-bottom: 10px;
+    }
+
+    .teem-member:hover {
+      border-color: #0088cc;
+    }
