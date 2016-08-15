@@ -55,6 +55,10 @@ var aboutModel = {
     title: "About Us"
 };
 
+var errorModel = {
+    title: "Page Not Found"
+}
+
 //Routes
 //Add a route for each view under views/pages
 
@@ -87,6 +91,10 @@ if (!config.construction) {
     });
     
 }
+
+app.use(function(request, response) { 
+    response.render("pages/404", errorModel); 
+});
 
 app.listen(config.port, function() {
     console.log("Started web server.");
