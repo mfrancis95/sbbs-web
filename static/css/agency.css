@@ -282,7 +282,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-  background-image: url('../img/headerImages/sierra332cropped.png');
+  /*background-image: url('../img/headerImages/sierra332cropped.png');*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -293,6 +293,7 @@ header {
   box-shadow: inset 0 0 10em #444;
   text-align: center;
   color: white;
+  position: relative;
 }
 
 .headerSection{
