@@ -1068,15 +1068,15 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0088cc;
+  -webkit-tap-highlight-color: #0088cc;
 }
 
 .member-photo {
-	box-sizing:border-box;
-	-webkit-border-radius:50%;
-		-moz-border-radius:50%;
-			border-radius:50%;	
-	margin: 0 0 20px 0;
+    box-sizing:border-box;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;	
+    margin: 0 0 20px 0;
 }
 .member-photo img {
 	-webkit-border-radius:50%;
@@ -1094,29 +1094,34 @@ body {
   padding: 100px 0;
 }
 
-  .teem-member {
+.teem-member {
     padding: 13px;
     background: #eeeeee;
     border: 2px solid #eeeeee;
     transition: border-color 400ms;
     -webkit-transition: border-color 400ms;
-    } 
-    
-    .team-img {
-      margin: -15px -15px 0 -15px;
-      text-align:center;
-    }
+} 
 
-    .team-info {
-      padding-bottom: 10px;
-      border-bottom: 1px solid #dbdbdb;
-      margin-bottom: 10px;
-    }
+.team-img {
+    margin: -15px -15px 0 -15px;
+    text-align:center;
+}
 
-    .teem-member:hover {
-      border-color: #0088cc;
-    }
+.team-info {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+}
+
+.teem-member:hover {
+    border-color: #0088cc;
+}
+
+#constructionContainer{
+    margin-bottom:auto;
+}
+
+.clientLink:hover{
+    opacity: .5;
+}
     
-    #constructionContainer{
-        margin-bottom:auto;
-    }
