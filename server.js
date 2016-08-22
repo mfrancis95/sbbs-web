@@ -14,7 +14,7 @@ if (config.logging) {
     app.use(require("morgan")("common"));
 }
 
-app.use("/static", express.static("static", {
+app.use(express.static("static", {
     maxAge: config.maxAge ? config.maxAge : 0
 }));
 
