@@ -1,5 +1,6 @@
 {
     "construction": true,
+    "logging": true,
     "minify": true,
-    "port": 80
+    "port": 8080
 }
