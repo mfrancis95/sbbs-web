@@ -284,7 +284,7 @@ fieldset[disabled] .btn-xl.active {
 header {
   background-image: url('../img/headerImages/sierra332cropped.png');
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -533,9 +533,16 @@ section#contact .text-danger {
 footer {
   background-color: #242424;
   color: white;
-  padding: 25px 0;
+  padding: 50px 0;
   text-align: center;
 }
+
+@media(min-width:560px){
+    footer{
+        padding:25px 0;
+    }
+}
+
 footer span.copyright {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -657,7 +664,7 @@ ul.social-buttons li a:active {
     font-weight: bold;
     height: 50px;
     position: fixed;
-    right: 50px;
+    right: 20px;
     text-align: center;
     text-decoration: none;
     width: 50px;
@@ -1108,4 +1115,8 @@ body {
 
     .teem-member:hover {
       border-color: #0088cc;
+    }
+    
+    #constructionContainer{
+        margin-bottom:auto;
     }
