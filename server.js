@@ -36,19 +36,19 @@ var energyModel = {
 var mechModel = {
     title: "Mechanical Systems Design",
     slidePath: "mech",
-    slides: ["mech1","mech2","mech3","mech4","mech5","mech6"]
+    slides: ["mech1", "mech2", "mech3", "mech4", "mech5", "mech6"]
 };
 
 var controlsModel = {
     title: "Controls & Automation",
     slidePath: "controls",
-    slides: ["controls1","controls2","controls3","controls4"]
+    slides: ["controls1", "controls2", "controls3", "controls4"]
 };
 
 var powerModel = {
     title: "Renewable Power Generation",
     slidePath: "power",
-    slides: ["power1","power2","power3","power4","power5","power6","power7","power8"]
+    slides: ["power1", "power2", "power3", "power4", "power5", "power6", "power7", "power8"]
 };
 
 var aboutModel = {
@@ -57,7 +57,7 @@ var aboutModel = {
 
 var errorModel = {
     title: "Page Not Found"
-}
+};
 
 //Routes
 //Add a route for each view under views/pages
