@@ -4,7 +4,6 @@ Element.prototype.parallaxify = function() {
     var factor = dataset.factor || -1;
     var updating;
     if (dataset.image === "background") {
-        self.style.backgroundAttachment = "fixed";
         var xPos = window.getComputedStyle(self).getPropertyValue("background-position").split(" ")[0];
         var update = function() {
             self.style.backgroundPosition = xPos + " " + (window.scrollY * factor) + "px";

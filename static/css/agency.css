@@ -286,7 +286,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-  /*background-image: url('../img/headerImages/sierra332cropped.png');*/
+  background-image: url('../img/headerImages/sierra332cropped.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -298,6 +298,22 @@ header {
   text-align: center;
   color: white;
   position: relative;
+}
+
+#energyHeader{
+    background-image: url('../img/headerImages/lightBulbs.jpg');
+}
+
+#controlsHeader{
+    background-image: url('../img/headerImages/board.jpg');
+}
+
+#powerHeader{
+    background-image: url('../img/headerImages/power.jpg');
+}
+
+#aboutHeader{
+    background-image: url('../img/headerImages/about-bg.jpg');
 }
 
 .headerSection{
@@ -838,6 +854,21 @@ ul.social-buttons li a:active {
     font-size:2.3em;
 }
 
+.toolClick:hover:after{
+        font-size:.5em;
+        background: #333;
+        background: rgba(0,0,0,.8);
+        border-radius: 5px;
+        color: #fff;
+        content: attr(title);
+        right: 2px;
+        bottom:55px;
+        padding: 5px 15px;
+        position: absolute;
+        z-index: 98;
+        width: 240px;
+    }
+
 @media (min-width:560px){
 .social-sidebar{
     text-align:center;
@@ -858,6 +889,23 @@ ul.social-buttons li a:active {
     
     .toolClick{
         font-size:2.5em;
+        display: inline;
+        position:relative;
+    }
+    
+    .toolClick:hover:after{
+        font-size:.5em;
+        background: #333;
+        background: rgba(0,0,0,.8);
+        border-radius: 5px;
+        color: #fff;
+        content: attr(title);
+        right: 55px;
+        bottom:2px;
+        padding: 5px 15px;
+        position: absolute;
+        z-index: 98;
+        width: 240px;
     }
 }
 
@@ -1091,6 +1139,10 @@ body {
 			border-radius:50%;	
 }
 
+.mar-bot20{
+    margin-bottom:20px;
+}
+
 .mar-bot40 {
 	margin-bottom: 40px;
 }
@@ -1110,7 +1162,6 @@ body {
 } 
 
 .team-img {
-    margin: -15px -15px 0 -15px;
     text-align:center;
 }
 
@@ -1132,3 +1183,8 @@ body {
     opacity: .5;
 }
     
+@media(min-width:560px){
+    #map{
+        padding: 0 75px 0 75px;
+    }
+}

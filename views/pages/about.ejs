@@ -31,7 +31,7 @@
                             <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#team">Team</a>
                         </li>
                         <li>
-                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#google-map">Map</a>
+                            <a class="smooth-scroll" data-ease="easeInOutQuad" data-history="true" href ="#map">Map</a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +41,7 @@
         </nav>
 
         <!-- Header -->
-        <header class="parallax" data-factor=".6" data-image="/img/headerImages/about-bg.jpg">
+        <header id="aboutHeader" class="parallax" data-factor=".6" data-image="/img/headerImages/about-bg.jpg">
             <div class="container">
                 <div class="intro-text" style="padding-top:225px;">
                     <div class="headerArrowContainer">
@@ -120,7 +120,7 @@
             <!-- Will -->
 
             <!-- Jessica -->
-            <div id="geothermal" style="padding-top:15px; padding-bottom: 15px;">
+            <div  style="padding-top:15px; padding-bottom: 15px;">
                 <div class="container variableCenter">
                     <div class="row">
                         <div class="col-md-4">
@@ -146,7 +146,7 @@
             <!-- Jessica -->
 
             <!-- Jackie -->
-            <div id="geothermal" style="padding-top:15px; padding-bottom: 15px;">
+            <div  style="padding-top:15px; padding-bottom: 15px;">
                 <div class="container variableCenter">
                     <div class="row">
                         <div class="col-md-8">
@@ -172,7 +172,7 @@
             <!-- Jackie -->
 
             <!-- Siqi -->
-            <div id="geothermal" style="padding-top:15px; padding-bottom: 15px;">
+            <div  style="padding-top:15px; padding-bottom: 15px;">
                 <div class="container variableCenter">
                     <div class="row">
                         <div class="col-md-4">
@@ -198,7 +198,7 @@
             <!-- Siqi -->
 
             <!-- Mike -->
-            <div id="geothermal" style="padding-top:15px; padding-bottom: 15px;">
+            <div  style="padding-top:15px; padding-bottom: 15px;">
                 <div class="container variableCenter">
                     <div class="row">
                         <div class="col-md-8">
@@ -224,7 +224,7 @@
             <!-- Mike -->
 
             <!-- Danny -->
-            <div id="geothermal" style="padding-top:15px; padding-bottom: 15px;">
+            <div  style="padding-top:15px; padding-bottom: 15px;">
                 <div class="container variableCenter">
                     <div class="row">
                         <div class="col-md-4">
@@ -248,9 +248,37 @@
                 </div><!--/container-->
             </div>
             <!-- Danny -->
+            
+        <!-- Dylan -->
+            <div style="padding-top:15px; padding-bottom: 15px;">
+                <div class="container variableCenter">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Dylan Kann</h4>
+                            <i>Role</i>
+                            <br><br>
+                            <p style="line-height:2.5;">Founder and President Will 
+                                Becchina has extensive experience in HVAC, 
+                                green building technologies, Building Information 
+                                Modeling (BIM), and cost/benefit analysis 
+                                of renewable energy alternatives.  He teaches 
+                                a graduate-level course in building energy 
+                                management at Stony Brook University and 
+                                leads a dedicated team of experts.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="member-photo" src="/img/team/member1.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div><!--/row-->
+                </div><!--/container-->
+            </div>
+            <!-- Dylan -->
+            
         </section>
         <!-- Team -->
 
+        <!-- Column Format
         <section id="meet-team" class="bg-mid-gray">
             <div class="container">
                 <div class="section-header mar-bot40">
@@ -278,7 +306,7 @@
                 <div class="col-sm-6 col-md-4 mar-bot40">
                     <div class="teem-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="/img/team/member1.jpg" alt="">
+                            <img class="member-photo img-responsive" src="/img/team/member1.jpg" alt="">
                         </div>
                         <div class="team-info">
                             <h3>Jessica Jolley</h3>
@@ -369,6 +397,8 @@
                     </div>
             </div>
         </section>
+        -->
+        
         <!-- 1 2 3 Format
         <section id="team">
             <div class="container">
@@ -456,8 +486,10 @@
         -->
         <!-- Team -->
 
-        <div id="google-map" class="bg-light-gray wow fadeIn" data-latitude="40.9123180" data-longitude="-73.1139380" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
-
+        <section class="bg-light-gray align-center" id="map">
+            <div id="google-map" class="bg-light-gray wow fadeIn" data-latitude="40.9123180" data-longitude="-73.1139380" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+        </section>
+        
         <% include ../partials/footer %>
     </body>
 
