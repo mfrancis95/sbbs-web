@@ -5,19 +5,39 @@
     <body id="page-top" class="index">
 
         <!-- Header -->
-        <header style='background-color:white;background-image:none;'>
-            <div class="text-center" style='width:100%;'>
+        <header style="background-color:white;background-image:none;">
+            <div class="text-center" style="width:100%;">
                 <div class="intro-text" style="padding-top: 150px; padding-bottom:15px; background-color:#0088cc;">
-                    <div class="intro-heading" style='font-size:150px;'>404</div>
+                    <div class="intro-heading" style="font-size:150px;">404</div>
                     <div class="intro-lead-in">This page doesn't exist!</div>
                 </div>
                 <div style="font-size:35px; padding-top: 100px; color:#0088cc;">
-                    <a id='redirect' href='/'>
-                        <strong>Redirect to homepage</strong>
+                    <a id="redirect" href="/">
+                        <strong>Go to homepage</strong>
                     </a>
                 </div>
+                <p style="color: #0088cc;">Redirecting in <span id="current-second">10</span> <span id="seconds">seconds</span>...</p>
             </div>
         </header>
+        
+        <script>
+            var currentSecondElem = document.getElementById("current-second");
+            var secondsElem = document.getElementById("seconds");
+            var interval = setInterval(function() {
+                var second = parseInt(currentSecondElem.innerHTML) - 1;
+                if (second <= 0) {
+                    clearInterval(interval);
+                    window.location.href = "/";
+                }
+                currentSecondElem.innerHTML = second;
+                if (second === 1) {
+                    secondsElem.innerHTML = "second";
+                }
+                else {
+                    secondsElem.innerHTML = "seconds";
+                }
+            }, 1000);
+        </script>
         
     </body>
 
