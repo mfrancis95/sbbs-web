@@ -1,5 +1,5 @@
 <section id="main-slider" class="bg-light-gray" style="padding-top:0; padding-bottom:0;">
-    <div class="container" style="width:100%">
+    <div class="container" style="width:100%; background-color: #666666;">
         <div class="row">  <!--Row-->
             <div class="owl-carousel">
                 <% for (var i = 0; i < slides.length; i++) { %>
@@ -87,7 +87,7 @@ $(document).ready(function () {
     function start() {
         //reset timer
         percentTime = 0;
-        isPause = true;
+        isPause = false;
         //run interval every 0.01 second
         tick = setInterval(interval, 10);
     }

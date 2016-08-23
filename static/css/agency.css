@@ -78,6 +78,10 @@ h6 {
 .bg-darkest-gray {
   background-color: #222222;
 }
+
+.bg-white{
+  background-color:white;
+}
 .btn-primary {
   color: white;
   background-color: #0088cc;
@@ -913,7 +917,9 @@ ul.social-buttons li a:active {
 
 /** SLIDESHOW **/
 .paginationBar{
-    background-color: #242424;
+    background-color: #666666;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .owl-prev{
