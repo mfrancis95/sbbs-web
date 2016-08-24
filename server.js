@@ -30,7 +30,7 @@ var indexModel = {
 var energyModel = {
     title: "Energy Modeling",
     slidePath: "energy",
-    slides: ["energy2", "energy3", "energy4", "energy5", "insight1", "insight2"]
+    slides: ["energy1","energy2", "energy3", "energy4", "insight1", "insight2","insight3","insight4","insight5"]
 };
 
 var mechModel = {

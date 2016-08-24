@@ -554,7 +554,7 @@ section#contact .text-danger {
 footer {
   background-color: #242424;
   color: white;
-  padding: 50px 0;
+  padding: 75px 0;
   text-align: center;
 }
 
@@ -563,6 +563,17 @@ footer {
         padding:25px 0;
     }
 }
+
+@media(min-width:992px){
+    #copyright{
+        transform: translateY(100%);
+    }
+    
+    #socialMedia{
+        transform: translateY(100%);
+    }
+}
+
 
 footer span.copyright {
   line-height: 40px;
