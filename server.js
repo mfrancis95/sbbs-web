@@ -30,25 +30,25 @@ var indexModel = {
 var energyModel = {
     title: "Energy Modeling",
     slidePath: "energy",
-    slides: ["energy2", "energy3", "energy4", "energy5", "insight1", "insight2"]
+    slides: ["energy1","energy2", "energy3", "energy4", "insight1", "insight2","insight3","insight4","insight5"]
 };
 
 var mechModel = {
     title: "Mechanical Systems Design",
     slidePath: "mech",
-    slides: ["mech1", "mech2", "mech3", "mech4", "mech5", "mech6"]
+    slides: ["mech1", "mech2", "mech3", "mech4"]
 };
 
 var controlsModel = {
     title: "Controls & Automation",
     slidePath: "controls",
-    slides: ["controls1", "controls2", "controls3", "controls4"]
+    slides: ["controls1", "controls2", "controls3", "controls4","controls5"]
 };
 
 var powerModel = {
     title: "Renewable Power Generation",
     slidePath: "power",
-    slides: ["power1", "power2", "power3", "power4", "power5", "power6", "power7", "power8"]
+    slides: ["power1", "power2", "power3", "power4", "power5", "power6", "power7"]
 };
 
 var aboutModel = {

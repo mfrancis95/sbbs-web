@@ -1,5 +1,5 @@
 <section id="main-slider" class="bg-light-gray" style="padding-top:0; padding-bottom:0;">
-    <div class="container" style="width:100%">
+    <div class="container" style="width:100%; background-color: #666666;">
         <div class="row">  <!--Row-->
             <div class="owl-carousel">
                 <% for (var i = 0; i < slides.length; i++) { %>
@@ -32,7 +32,7 @@ function changeSlide(element){
             case "Energy Modeling":
                 $elem.trigger('owl.goTo',0);
                 break;
-            case "Mech. Systems": 
+            case "Mechanical Systems": 
                 $elem.trigger('owl.goTo',1);
                 break;
             case "Automation &amp; Controls":
