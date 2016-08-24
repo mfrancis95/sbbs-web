@@ -36,7 +36,7 @@ var energyModel = {
 var mechModel = {
     title: "Mechanical Systems Design",
     slidePath: "mech",
-    slides: ["mech1", "mech2", "mech3", "mech4", "mech5", "mech6"]
+    slides: ["mech1", "mech2", "mech3", "mech4"]
 };
 
 var controlsModel = {
@@ -48,7 +48,7 @@ var controlsModel = {
 var powerModel = {
     title: "Renewable Power Generation",
     slidePath: "power",
-    slides: ["power1", "power2", "power3", "power4", "power5", "power6", "power7", "power8"]
+    slides: ["power1", "power2", "power3", "power4", "power5", "power6", "power7"]
 };
 
 var aboutModel = {
