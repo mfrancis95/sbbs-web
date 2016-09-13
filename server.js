@@ -42,7 +42,7 @@ var mechModel = {
 var controlsModel = {
     title: "Controls & Automation",
     slidePath: "controls",
-    slides: ["controls1", "controls2", "controls3", "controls4","controls5"]
+    slides: ["controls1", "controls2", "controls3"]
 };
 
 var powerModel = {
