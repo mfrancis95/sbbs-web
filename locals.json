@@ -1,0 +1,30 @@
+{
+    "index": {
+        "slidePath": "",
+        "slides": ["energy", "mech", "controls", "power"],
+        "title": "Stony Brook Building Science"
+    },
+    "energyModeling": {
+        "slidePath": "energy",
+        "slides": ["energy1","energy2", "energy3", "energy4", "insight1", "insight2","insight3","insight4","insight5"],
+        "title": "Energy Modeling"
+    },
+    "mechSystems": {
+        "slidePath": "mech",
+        "slides": ["mech1", "mech2", "mech3", "mech4"],
+        "title": "Mechanical Systems Design"
+    },
+    "controls": {
+        "slidePath": "controls",
+        "slides": ["controls1", "controls2", "controls3"],
+        "title": "Controls & Automation"
+    },
+    "renewablePower": {
+        "title": "Renewable Power Generation",
+        "slidePath": "power",
+        "slides": ["power1", "power2", "power3", "power4", "power5", "power6", "power7"]        
+    },
+    "about": {
+        "title": "About Us"
+    }
+}
