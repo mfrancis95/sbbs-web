@@ -6,7 +6,7 @@
     },
     "energyModeling": {
         "slidePath": "energy",
-        "slides": ["energy1","energy2", "energy3", "energy4", "insight1", "insight2","insight3","insight4","insight5"],
+        "slides": ["energy1","energy2", "energy3", "energy4", "insight1", "insight2","insight4","insight5"],
         "title": "Energy Modeling"
     },
     "mechSystems": {

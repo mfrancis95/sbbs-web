@@ -161,7 +161,7 @@ Element.prototype.smoothScrollify = function() {
         event.preventDefault();
         var dataset = self.dataset;
         var href = self.getAttribute("href");
-        if (dataset.history) {
+        if (dataset.history == "true") {
             history.pushState(null, null, href);
         }
  
