@@ -1,10 +1,10 @@
 Run server command format:
 
-`node server.js [mode]`
+`npm start [mode]`
 
 Where mode is either construction, development, or production.
 
-Ex: `node server.js production`
+Ex: `npm start production`
 
 Use construction mode to display the "Under Construction" page.
 Use development mode when testing and developing the site locally.
