@@ -1,16 +1,15 @@
 {
   "name": "sbbs-web",
   "version": "1.0.0",
-  "author": "mike",
-  "contributors": [],
   "dependencies": {
-    "compression": "^1.6.2",
-    "ejs": "^2.4.2",
-    "express": "^4.14.0",
+    "compression": "^1.7.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
     "express-minify": "^0.2.0",
-    "morgan": "^1.7.0"
+    "morgan": "^1.8.2",
+    "view-serve": "git+https://github.com/mfrancis95/view-serve.git"
   },
   "scripts": {
-    "start": "node server.js development"
+    "start": "node server.js"
   }
 }

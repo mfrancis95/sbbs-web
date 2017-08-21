@@ -1,6 +1,4 @@
 {
     "maxAge": 1209600000,
-    "minify": true,
-    "logging": true,
-    "port": 8080
+    "minify": true
 }

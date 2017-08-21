@@ -6,7 +6,7 @@
     },
     "energyModeling": {
         "slidePath": "energy",
-        "slides": ["energy1","energy2", "energy3", "energy4", "insight1", "insight2","insight4","insight5"],
+        "slides": ["energy1", "energy2", "energy3", "energy4", "insight1", "insight2", "insight4", "insight5"],
         "title": "Energy Modeling"
     },
     "mechSystems": {
@@ -22,7 +22,7 @@
     "renewablePower": {
         "title": "Renewable Power Generation",
         "slidePath": "power",
-        "slides": ["power1", "power2", "power3", "power4", "power5", "power6", "power7"]        
+        "slides": ["power1", "power2", "power3", "power4", "power5", "power6", "power7"]
     },
     "about": {
         "title": "About Us"
